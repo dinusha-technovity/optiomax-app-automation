@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-27T11:54:45 IST" name="Default suite" finished-at="2024-06-27T11:55:31 IST" duration-ms="45828">
+    <groups>
+    </groups>
+    <test started-at="2024-06-27T11:54:45 IST" name="Default test" finished-at="2024-06-27T11:55:31 IST" duration-ms="45828">
+      <class name="com.Optiomax.testCases.AddWorkflowTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:54:45 IST" name="setup" finished-at="2024-06-27T11:54:51 IST" duration-ms="5947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:54:51 IST" name="setUpPage" finished-at="2024-06-27T11:55:02 IST" duration-ms="10951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="addNewWorkflowWithValidData()[pri:1, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:02 IST" name="addNewWorkflowWithValidData" finished-at="2024-06-27T11:55:08 IST" duration-ms="6799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewWorkflowWithValidData -->
+        <test-method signature="verifyErrorHandlingForRequiredFields()[pri:2, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:08 IST" name="verifyErrorHandlingForRequiredFields" finished-at="2024-06-27T11:55:12 IST" duration-ms="3268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorHandlingForRequiredFields -->
+        <test-method signature="verifyAddingWorkflowWithDuplicateData()[pri:3, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:12 IST" name="verifyAddingWorkflowWithDuplicateData" finished-at="2024-06-27T11:55:17 IST" duration-ms="4813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingWorkflowWithDuplicateData -->
+        <test-method signature="verifyAddingWorkflowWithEmptyDescription()[pri:4, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:17 IST" name="verifyAddingWorkflowWithEmptyDescription" finished-at="2024-06-27T11:55:20 IST" duration-ms="3477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingWorkflowWithEmptyDescription -->
+        <test-method signature="verifyAddingWorkflowWithEmptyWorkflowName()[pri:5, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:20 IST" name="verifyAddingWorkflowWithEmptyWorkflowName" finished-at="2024-06-27T11:55:23 IST" duration-ms="3436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingWorkflowWithEmptyWorkflowName -->
+        <test-method signature="addNewWorkflowWithSpecialCharacters()[pri:8, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:23 IST" name="addNewWorkflowWithSpecialCharacters" finished-at="2024-06-27T11:55:30 IST" duration-ms="6607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewWorkflowWithSpecialCharacters -->
+        <test-method signature="openAndCloseAddWorkflowModal()[pri:9, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:30 IST" name="openAndCloseAddWorkflowModal" finished-at="2024-06-27T11:55:30 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAndCloseAddWorkflowModal -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:30 IST" name="teardown" finished-at="2024-06-27T11:55:31 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.Optiomax.testCases.AddWorkflowTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
