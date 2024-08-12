@@ -44,6 +44,5 @@ public class DeleteWorkflowPage {
     public void clickCloseButton() {
         driver.findElement(closeButton).click();
     }
-    
 }
 

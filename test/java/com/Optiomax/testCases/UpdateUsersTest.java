@@ -84,7 +84,7 @@ public class UpdateUsersTest extends BasePage {
 
     @Test(priority = 8)
     public void attemptToInputLongDescription() {
-        String longDescription = new String(new char[501]).replace('\0', 'a'); // 501 characters
+        String longDescription = new String(new char[501]).replace('\0', 'a'); 
         updateUsersPage.setDescription(longDescription);
         updateUsersPage.updateUser();
         Assert.assertTrue(driver.getPageSource().contains("Description too long"));

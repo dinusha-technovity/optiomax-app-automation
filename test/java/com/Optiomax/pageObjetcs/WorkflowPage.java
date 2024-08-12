@@ -91,6 +91,8 @@ public class WorkflowPage {
     public void clickDeleteWorkflowCloseBtn() {
     	driver.findElement(deleteWorkflowCloseBtn).click();
     }
+    
+    
 }
 
 

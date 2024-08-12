@@ -3,23 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Optiomax.testCases.AddUsersTest">
+      <class name="com.Optiomax.testCases.AddNewAssetRequisitionTest">
         <methods>
+          <include name="testAddNewAssetRequisition"/>
           <include name="setup"/>
-          <include name="verifyOnlySupportedFileTypesCanBeUploaded"/>
           <include name="setUp"/>
-          <include name="verifyErrorForInvalidPhoneNumberFormat"/>
-          <include name="verifyErrorForDuplicateEmail"/>
-          <include name="verifyErrorWhenAssigningAlreadyAssignedRole"/>
-          <include name="verifyImageResolutionIsRestricted"/>
-          <include name="verifyRolesCanBeAddedToTheUser"/>
-          <include name="verifyErrorForInvalidCharacters"/>
-          <include name="verifyUserInformationCanBeSavedWithOptionalFieldsBlank"/>
           <include name="teardown"/>
-          <include name="verifyImageCanBeUploaded"/>
-          <include name="verifyValidUserInformationCanBeSaved"/>
         </methods>
-      </class> <!-- com.Optiomax.testCases.AddUsersTest -->
+      </class> <!-- com.Optiomax.testCases.AddNewAssetRequisitionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

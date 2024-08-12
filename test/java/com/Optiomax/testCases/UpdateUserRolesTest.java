@@ -77,7 +77,14 @@ public class UpdateUserRolesTest extends BasePage {
         //Assert.assertTrue(updateUserRolesPage.isRoleNameErrorDisplayed());
         
         Assert.assertEquals(updateUserRolesPage.getRoleNameError(), "Role name already exists"); 
-    }    
+    } 
+    
+    @Test(priority =7)
+    public void DuplicateRoleNameUpdate() {
+    	updateUserRolesPage.clickUpdateButton("");
+    	updateUserRolesPage.setRoleName("Update Role");
+    	updateUserRolesPage.clickSaveButton();
+    }
     
 } 
 

@@ -1,53 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-27T11:54:45 IST" name="Default suite" finished-at="2024-06-27T11:55:31 IST" duration-ms="45828">
+  <suite started-at="2024-08-08T10:28:19 IST" name="Default suite" finished-at="2024-08-08T10:28:49 IST" duration-ms="29751">
     <groups>
     </groups>
-    <test started-at="2024-06-27T11:54:45 IST" name="Default test" finished-at="2024-06-27T11:55:31 IST" duration-ms="45828">
-      <class name="com.Optiomax.testCases.AddWorkflowTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:54:45 IST" name="setup" finished-at="2024-06-27T11:54:51 IST" duration-ms="5947" status="PASS">
+    <test started-at="2024-08-08T10:28:19 IST" name="Default test" finished-at="2024-08-08T10:28:49 IST" duration-ms="29751">
+      <class name="com.Optiomax.testCases.AddNewAssetRequisitionTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Optiomax.testCases.AddNewAssetRequisitionTest@41e36e46]" started-at="2024-08-08T10:28:19 IST" name="setup" finished-at="2024-08-08T10:28:25 IST" duration-ms="5861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:54:51 IST" name="setUpPage" finished-at="2024-06-27T11:55:02 IST" duration-ms="10951" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Optiomax.testCases.AddNewAssetRequisitionTest@41e36e46]" started-at="2024-08-08T10:28:25 IST" name="setUp" finished-at="2024-08-08T10:28:41 IST" duration-ms="16424" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpPage -->
-        <test-method signature="addNewWorkflowWithValidData()[pri:1, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:02 IST" name="addNewWorkflowWithValidData" finished-at="2024-06-27T11:55:08 IST" duration-ms="6799" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddNewAssetRequisition()[pri:1, instance:com.Optiomax.testCases.AddNewAssetRequisitionTest@41e36e46]" started-at="2024-08-08T10:28:41 IST" name="testAddNewAssetRequisition" finished-at="2024-08-08T10:28:48 IST" duration-ms="7107" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: 'text' is empty
+  (Session info: chrome=127.0.6533.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 169ff716e5f8b9328ecfabaf31d3a406]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: 'text' is empty
+  (Session info: chrome=127.0.6533.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 169ff716e5f8b9328ecfabaf31d3a406
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at com.Optiomax.pageObjetcs.AddNewAssetRequisitionPage.attachFile(AddNewAssetRequisitionPage.java:141)
+at com.Optiomax.testCases.AddNewAssetRequisitionTest.testAddNewAssetRequisition(AddNewAssetRequisitionTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewWorkflowWithValidData -->
-        <test-method signature="verifyErrorHandlingForRequiredFields()[pri:2, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:08 IST" name="verifyErrorHandlingForRequiredFields" finished-at="2024-06-27T11:55:12 IST" duration-ms="3268" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorHandlingForRequiredFields -->
-        <test-method signature="verifyAddingWorkflowWithDuplicateData()[pri:3, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:12 IST" name="verifyAddingWorkflowWithDuplicateData" finished-at="2024-06-27T11:55:17 IST" duration-ms="4813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingWorkflowWithDuplicateData -->
-        <test-method signature="verifyAddingWorkflowWithEmptyDescription()[pri:4, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:17 IST" name="verifyAddingWorkflowWithEmptyDescription" finished-at="2024-06-27T11:55:20 IST" duration-ms="3477" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingWorkflowWithEmptyDescription -->
-        <test-method signature="verifyAddingWorkflowWithEmptyWorkflowName()[pri:5, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:20 IST" name="verifyAddingWorkflowWithEmptyWorkflowName" finished-at="2024-06-27T11:55:23 IST" duration-ms="3436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingWorkflowWithEmptyWorkflowName -->
-        <test-method signature="addNewWorkflowWithSpecialCharacters()[pri:8, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:23 IST" name="addNewWorkflowWithSpecialCharacters" finished-at="2024-06-27T11:55:30 IST" duration-ms="6607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewWorkflowWithSpecialCharacters -->
-        <test-method signature="openAndCloseAddWorkflowModal()[pri:9, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:30 IST" name="openAndCloseAddWorkflowModal" finished-at="2024-06-27T11:55:30 IST" duration-ms="172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAndCloseAddWorkflowModal -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Optiomax.testCases.AddWorkflowTest@619713e5]" started-at="2024-06-27T11:55:30 IST" name="teardown" finished-at="2024-06-27T11:55:31 IST" duration-ms="275" status="PASS">
+        </test-method> <!-- testAddNewAssetRequisition -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Optiomax.testCases.AddNewAssetRequisitionTest@41e36e46]" started-at="2024-08-08T10:28:48 IST" name="teardown" finished-at="2024-08-08T10:28:49 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.Optiomax.testCases.AddWorkflowTest -->
+      </class> <!-- com.Optiomax.testCases.AddNewAssetRequisitionTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

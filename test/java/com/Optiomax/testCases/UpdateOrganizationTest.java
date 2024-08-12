@@ -55,8 +55,7 @@ public class UpdateOrganizationTest extends BasePage {
     public void verifyErrorHandlingWhenUpdatingToDuplicateData() {
         updateOrganizationPage.setOrganizationName("Duplicate Name");
         updateOrganizationPage.clickSave();
-        Assert.assertEquals(updateOrganizationPage.getErrorMessage(), "Organization Name already exists");
-        
+        Assert.assertEquals(updateOrganizationPage.getErrorMessage(), "Organization Name already exists");  
     }
 
     @Test(priority = 4)
@@ -70,10 +69,9 @@ public class UpdateOrganizationTest extends BasePage {
     public void verifySuccessfulUpdateOfOptionalFields() {
         updateOrganizationPage.setOrganizationDescription("Updated Optional Description");
         updateOrganizationPage.setAddress("Updated Optional Address");
-        updateOrganizationPage.setWebsite("http://updatedoptionalwebsite.com");
+        updateOrganizationPage.setWebsite("http://updatedorganization.com");
         updateOrganizationPage.clickSave();
-        // Add assertions to verify successful update of optional fields
-        
+        // Add assertions to verify successful update of optional fields  
     }
 
     @Test(priority = 6)

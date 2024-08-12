@@ -36,6 +36,8 @@ public class DeleteWorkflowTest extends BasePage {
         
 //        String successMessage = driver.findElement(By.xpath("")).getText();
 //        Assert.assertTrue(successMessage.contains(""));
+        
+        driver.navigate().refresh();
     }    
 
     @Test(priority = 2)

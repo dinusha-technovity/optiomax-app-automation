@@ -5,7 +5,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,7 +21,7 @@ public class WorkflowTest extends BasePage {
 	public void setUp() throws InterruptedException {
 		super.setup();
 		workflowPage = new WorkflowPage(driver);
-		workflowPage = PageFactory.initElements(driver, WorkflowPage.class);
+		//workflowPage = PageFactory.initElements(driver, WorkflowPage.class);
 		workflowPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/workflow");
