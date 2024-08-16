@@ -81,9 +81,10 @@ public class SupplierTest extends BasePage {
 		Assert.assertTrue(supplierPage.isStaffPresent(""),
 				"The search functionality did not return the expected result with partial name.");
 	}
-	
+
 	@AfterClass
 	public void tearDown() {
 		super.teardown();
 	}
+	
 }

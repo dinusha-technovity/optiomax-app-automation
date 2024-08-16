@@ -97,4 +97,28 @@ public class ProcurementInitiateFormTest extends BasePage {
         formPage.selectRequiredDate("08/04/2024");
         Assert.assertEquals(formPage.getSelectedDate(), "08/04/2024", "Required date is not selected correctly");
     }
+    
+//    @Test(priority = 13)
+//    public void verifySelectedItems() {
+//    	formPage.selectedItems();
+//    	formPage.clickSubmit();
+//    	Assert.assertEquals(formPage.isItemSelected(""), "Item is not selected correctly.");
+//    }
+//    
+//    @Test(priority = 14)
+//    public void verifyItems() {
+//    	formPage.selectedItems();
+//    	formPage.clickSubmit();
+//    	Assert.assertEquals(formPage.isItemSelected(""), "Items are not selected correctly.");
+//    }
+//    
+//    @Test(priority = 15)
+//    public void verifyAddMultipleItems() {
+//    	formPage.selectedItems();
+//    	formPage.selectedItems();
+//    	formPage.clickSubmit();
+//    	Assert.assertEquals(formPage.isItemSelected(""), "Multiple items are not selected.");
+//    }
+   
 }
+

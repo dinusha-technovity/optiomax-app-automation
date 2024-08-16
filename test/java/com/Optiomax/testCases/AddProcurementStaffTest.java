@@ -42,15 +42,29 @@ public class AddProcurementStaffTest extends BasePage {
 				"The member with one asset class was not added successfully.");
 	}
 
+//	@Test(priority = 3)
+//	public void testAddNewMemberWithMultipleAssetClasses() {
+//		addProcurementStaffPage.selectUser("User3");
+//		addProcurementStaffPage.selectAssetClass("Operating assets");
+//		addProcurementStaffPage.selectAssetClass("Non-operating assets");
+//		addProcurementStaffPage.clickSubmit();
+//		// Verification step for successful addition with multiple asset classes
+//		Assert.assertTrue(addProcurementStaffPage.isSuccessMessageDisplayed(),
+//				"The member with multiple asset classes was not added successfully.");
+//	}
+
 	@Test(priority = 3)
-	public void testAddNewMemberWithMultipleAssetClasses() {
-		addProcurementStaffPage.selectUser("User3");
-		addProcurementStaffPage.selectAssetClass("Operating assets");
-		addProcurementStaffPage.selectAssetClass("Non-operating assets");
+	public void addNewMemberWithMultipleAssetClasses() {
+		addProcurementStaffPage.selectUser("User");
+		addProcurementStaffPage.selectAssetClass("Fixed assets");
 		addProcurementStaffPage.clickSubmit();
-		// Verification step for successful addition with multiple asset classes
+
+		addProcurementStaffPage.selectUser("User");
+		addProcurementStaffPage.selectAssetClass("Current assets");
+		addProcurementStaffPage.clickSubmit();
+		// Verify successful addition multiple asset classes
 		Assert.assertTrue(addProcurementStaffPage.isSuccessMessageDisplayed(),
-				"The member with multiple asset classes was not added successfully.");
+				"The new member with multiple asset classes were not added successfully");
 	}
 
 	@Test(priority = 4)
@@ -94,7 +108,7 @@ public class AddProcurementStaffTest extends BasePage {
 		Assert.assertTrue(addProcurementStaffPage.isErrorMessageDisplayed(),
 				"Error message was not displayed for assigning a user to the same asset class again.");
 	}
-	
+
 	@Test(priority = 9)
 	public void testClosePopupWithoutAddingMember() {
 		addProcurementStaffPage.clickCloseButton();
@@ -109,20 +123,22 @@ public class AddProcurementStaffTest extends BasePage {
 		addProcurementStaffPage.clickSubmit();
 		Assert.assertTrue(addProcurementStaffPage.isErrorMessageDisplayed(), "Error message was not displayed.");
 
-		Assert.assertTrue(addProcurementStaffPage.isErrorMessageDisplayed(), "Error message was not diaplayed  for assign asset class.");
+		Assert.assertTrue(addProcurementStaffPage.isErrorMessageDisplayed(),
+				"Error message was not diaplayed  for assign asset class.");
 	}
-	
+
 	@Test(priority = 10)
 	public void verifyBothFieldsLeftBlanks() {
 		addProcurementStaffPage.selectUser("");
 		addProcurementStaffPage.selectAssetClass("");
 		addProcurementStaffPage.clickSubmit();
-		Assert.assertTrue(addProcurementStaffPage.isErrorMessageDisplayed(), "");
+		Assert.assertTrue(addProcurementStaffPage.isErrorMessageDisplayed(),
+				"Error message was not displayed for both field left blank.");
 	}
-
 
 	@AfterClass
 	public void tearDown() {
 		super.teardown();
 	}
+
 }

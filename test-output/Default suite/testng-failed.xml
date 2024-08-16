@@ -3,22 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Optiomax.testCases.SupplierTest">
+      <class name="com.Optiomax.testCases.AddNewSupplierIndividualTest">
         <methods>
+          <include name="testFormSubmissionWithSingleContactNumber"/>
           <include name="setup"/>
-          <include name="testDeleteButtonFunctionality"/>
-          <include name="testPageLoad"/>
-          <include name="setUp"/>
-          <include name="testSearchFunctionalityWithPartialNames"/>
-          <include name="tearDown"/>
-          <include name="testErrorHandlingForNonExistentSupplier"/>
-          <include name="testUpdateButtonFunctionality"/>
-          <include name="testSearchFunctionalityWithValidInput"/>
-          <include name="testAddNewSupplierButton"/>
-          <include name="testSupplierCardsDisplay"/>
+          <include name="testMissingRequiredFields"/>
+          <include name="testInvalidEmail"/>
+          <include name="testDuplicateEmail"/>
+          <include name="testFormSubmissionWithMultipleContactNumbers"/>
+          <include name="testFormSubmissionWithoutFields"/>
+          <include name="testMultipleAssetClassesSelection"/>
+          <include name="setupMethod"/>
           <include name="teardown"/>
+          <include name="testValidFormSubmission"/>
         </methods>
-      </class> <!-- com.Optiomax.testCases.SupplierTest -->
+      </class> <!-- com.Optiomax.testCases.AddNewSupplierIndividualTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

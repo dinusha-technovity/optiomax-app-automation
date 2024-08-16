@@ -13,7 +13,7 @@ public class ProcurementInitiateFormPage {
     private By procurementInitiateNumber = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[1]/div[1]/span");
     private By requisitionSearch = By.id("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[1]/div/input");
     private By assessRequests = By.xpath("");
-    //private By selectedItems = By.xpath("");
+    // private By selectedItems = By.xpath("");
     private By quantity = By.xpath("");
     private By budget = By.xpath("");
     private By removeItem = By.xpath("");
@@ -126,6 +126,17 @@ public class ProcurementInitiateFormPage {
         driver.findElement(quantity).clear();
         driver.findElement(budget).clear();
     }
+    
+    public void clickSubmit() {
+    	driver.findElement(submit).click();
+    }
+    
+//    public void selectedItems() {
+//    	driver.findElement(selectedItems).click();
+//    }
+    
+    
+    
 }
 
 
