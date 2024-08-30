@@ -10,7 +10,7 @@ public class SignInTest extends BasePage {
     @Test
     public void testValidEmailAndPassword() throws InterruptedException {
         SignInPage signInPage = new SignInPage(driver);
-        signInPage.signIn("chamoddushyantha2017@gmail.com", "UMwI4u3w", false);
+        signInPage.signIn("chamoddushyantha2017@gmail.com", "chamod1234", false);
         
 		// Assert successful login
 //      WebElement dashboard = driver.findElement(By.xpath("/html/body/main/div/header/nav/div/div[1]/a/img")); 

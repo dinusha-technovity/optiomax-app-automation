@@ -16,7 +16,7 @@ public class AddProcurementStaffTest extends BasePage {
 	public void setUp() throws InterruptedException {
 		super.setup();
 		addProcurementStaffPage = new AddProcurementStaffPage(driver);
-		addProcurementStaffPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		addProcurementStaffPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/workflow");
 		Thread.sleep(5000);

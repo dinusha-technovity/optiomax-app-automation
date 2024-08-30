@@ -18,7 +18,7 @@ public class UpdateWorkflowTest extends BasePage {
 		updateWorkflowPage = new UpdateWorkflowPage(driver);
 
 		updateWorkflowPage = PageFactory.initElements(driver, UpdateWorkflowPage.class);
-		updateWorkflowPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		updateWorkflowPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/workflow");
 		Thread.sleep(5000);

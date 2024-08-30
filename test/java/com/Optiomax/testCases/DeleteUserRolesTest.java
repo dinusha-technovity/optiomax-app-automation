@@ -14,7 +14,7 @@ public class DeleteUserRolesTest extends BasePage {
     public void setUp() throws InterruptedException {
 		deleteUserRolesPage = new DeleteUserRolesPage(driver);
 		deleteUserRolesPage = PageFactory.initElements(driver, DeleteUserRolesPage.class);
-		deleteUserRolesPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		deleteUserRolesPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/Roles"); 
 		Thread.sleep(5000);  

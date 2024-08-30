@@ -19,7 +19,7 @@ public class OrganizationTest extends BasePage {
     public void setUp() throws InterruptedException {
         super.setup();
         organizationPage = PageFactory.initElements(driver, OrganizationPage.class);
-        organizationPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        organizationPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/organization");
         Thread.sleep(5000);

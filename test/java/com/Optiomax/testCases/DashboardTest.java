@@ -14,7 +14,7 @@ public class DashboardTest extends BasePage {
     public void setup() {
         super.setup();
         dashboardPage = new DashboardPage(driver);
-        dashboardPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        dashboardPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
     }
 
     @Test

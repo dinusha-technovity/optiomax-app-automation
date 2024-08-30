@@ -16,7 +16,7 @@ public class UpdateUsersTest extends BasePage {
     public void setUp() throws InterruptedException {
         updateUsersPage = new UpdateUsersPage(driver);
         updateUsersPage = PageFactory.initElements(driver, UpdateUsersPage.class);
-        updateUsersPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        updateUsersPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/workflow");
         Thread.sleep(5000);

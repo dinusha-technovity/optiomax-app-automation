@@ -17,7 +17,7 @@ public class WidgetsDrawerTest extends BasePage {
     public void setUp() throws InterruptedException {
         super.setup();
         widgetsDrawerPage = PageFactory.initElements(driver, WidgetsDrawerPage.class);
-        widgetsDrawerPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        widgetsDrawerPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
 
     }

@@ -16,7 +16,7 @@ public class ThemeToggleTest extends BasePage {
     public void setUp() throws InterruptedException {
         setup();
         themeTogglePage = new ThemeTogglePage(driver);
-        themeTogglePage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        themeTogglePage.login("chamoddushyantha2017@gmail.com", "chamod1234");
     }
 
     @Test(priority = 1)

@@ -8,6 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 public class ProcurementInitiateFormPage {
 
     private WebDriver driver;
+    
+    private By emailField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input");
+    private By passwordField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[2]/div/input");
+    private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
+    private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 
     private By formHeader = By.xpath("//h3[normalize-space()='Add New Procurement Initiate']");
     private By procurementInitiateNumber = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[1]/div[1]/span");
@@ -26,6 +31,13 @@ public class ProcurementInitiateFormPage {
     public ProcurementInitiateFormPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+    
+    public void login(String email, String password) {
+        driver.findElement(emailField).sendKeys(email);
+        driver.findElement(passwordField).sendKeys(password);
+        driver.findElement(rememberMeCheckbox).click();
+        driver.findElement(signInButton).click();
     }
 
     public boolean isFormDisplayed() {
@@ -134,8 +146,7 @@ public class ProcurementInitiateFormPage {
 //    public void selectedItems() {
 //    	driver.findElement(selectedItems).click();
 //    }
-    
-    
+       
     
 }
 

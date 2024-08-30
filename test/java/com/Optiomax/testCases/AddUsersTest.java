@@ -17,7 +17,7 @@ public class AddUsersTest extends BasePage {
     public void setUp() throws InterruptedException {
         addUsersPage = new AddUsersPage(driver);
         addUsersPage = PageFactory.initElements(driver, AddUsersPage.class);
-        addUsersPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        addUsersPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/users");
         Thread.sleep(5000);

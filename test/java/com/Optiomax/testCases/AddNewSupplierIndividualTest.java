@@ -15,7 +15,7 @@ public class AddNewSupplierIndividualTest extends BasePage {
 	public void setupMethod() throws InterruptedException {
 		super.setup();
 		addNewSupplierIndividualPage = new AddNewSupplierIndividualPage(driver);
-		addNewSupplierIndividualPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		addNewSupplierIndividualPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/supplier");
 		Thread.sleep(5000);
@@ -170,6 +170,29 @@ public class AddNewSupplierIndividualTest extends BasePage {
 		// Assertion to verify successful form submission with multiple contact numbers
 //		String successMessage = addNewSupplierIndividualPage.getSuccessMessage();
 //		Assert.assertEquals(successMessage, "Supplier added successfully.");
+	
+	}
+	
+	@Test(priority = 9)
+	public void testSubmissionWithValidData() throws InterruptedException {
+		addNewSupplierIndividualPage.clickAddNewSupplierButton();
+		addNewSupplierIndividualPage.selectIndividualToggle();
+		addNewSupplierIndividualPage.enterName("Justin Lawrence");
+		addNewSupplierIndividualPage.enterAddress("506 Douglas St, Victoria");
+		addNewSupplierIndividualPage.selectAssetClass("Tangiable Assets");
+		addNewSupplierIndividualPage.addSupplierRatings();
+		addNewSupplierIndividualPage.enterContactNo("076 589 1204");
+		addNewSupplierIndividualPage.addContactNo();
+		addNewSupplierIndividualPage.enterLoginEmail("JustinLawrence123");
+		addNewSupplierIndividualPage.enterLoginUsername("justin.lawrence@gmail.com");
+		addNewSupplierIndividualPage.submitForm();
+		
+		Thread.sleep(3000);
+		
+		addNewSupplierIndividualPage.closeForm();
+		
+		String successMessage = addNewSupplierIndividualPage.getRequiredFieldErrorMessage("");
+		Assert.assertEquals(successMessage, "The supplier added successfully.");
 	}
 
 }

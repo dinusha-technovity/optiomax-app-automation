@@ -20,7 +20,7 @@ public class AddNewSupplierCompanyTest extends BasePage {
 	public void setUp() throws InterruptedException {
 		super.setup();
 		addNewSupplierCompanyPage = new AddNewSupplierCompanyPage(driver);
-		addNewSupplierCompanyPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		addNewSupplierCompanyPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/supplier");
 		Thread.sleep(5000);
@@ -183,6 +183,20 @@ public class AddNewSupplierCompanyTest extends BasePage {
 		coordinates.put("latitude", 42.1408845);
 		coordinates.put("longitude", -72.5033907);
 		coordinates.put("accuracy", 100);
+	}
+	
+	@Test(priority = 9)
+	public void testbrAttach() {
+		addNewSupplierCompanyPage.clickAddNewSupplierButton();
+		addNewSupplierCompanyPage.selectCompanyToggle();
+		addNewSupplierCompanyPage.selectAssetClass("");
+		addNewSupplierCompanyPage.uploadBRAttachment("");
+		addNewSupplierCompanyPage.enterLoginEmail("");
+		addNewSupplierCompanyPage.enterLoginUsername("");
+		addNewSupplierCompanyPage.clickSubmitButton();
+		
+		WebElement brAttachment = driver.findElement(By.xpath(""));
+		Assert.assertEquals(brAttachment.getAttribute("value"), "BR attachment should be uploaded successfully.");
 	}
 	
 }

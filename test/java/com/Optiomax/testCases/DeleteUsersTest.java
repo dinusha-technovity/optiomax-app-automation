@@ -15,7 +15,7 @@ public class DeleteUsersTest extends BasePage {
     public void setUpPage() throws InterruptedException {
         deleteUsersPage = new DeleteUsersPage(driver);
         deleteUsersPage = PageFactory.initElements(driver, DeleteUsersPage.class);
-        deleteUsersPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        deleteUsersPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/users");
         Thread.sleep(5000);

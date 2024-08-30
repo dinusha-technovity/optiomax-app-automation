@@ -16,7 +16,7 @@ public class AddOrganizationTest extends BasePage {
     public void setUpTest() throws InterruptedException {
         addOrganizationPage = new AddOrganizationPage(driver);
         addOrganizationPage = PageFactory.initElements(driver, AddOrganizationPage.class);
-        addOrganizationPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        addOrganizationPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/organization");
         Thread.sleep(5000);
@@ -115,8 +115,9 @@ public class AddOrganizationTest extends BasePage {
         addOrganizationPage.clickSave();
         // Add assertion to verify to error message
         Assert.assertTrue(addOrganizationPage.isErrorMessageDisplayed());
-    }   
+    } 
+    
+    
    
-
 }
 

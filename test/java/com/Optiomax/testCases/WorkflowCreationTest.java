@@ -18,7 +18,7 @@ public class WorkflowCreationTest extends BasePage {
 	public void setUp() throws InterruptedException {
 		workflowCreationPage = new WorkflowCreationPage(driver);
 		workflowCreationPage = PageFactory.initElements(driver, WorkflowCreationPage.class);
-		workflowCreationPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		workflowCreationPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/workflow");
 		Thread.sleep(5000); 

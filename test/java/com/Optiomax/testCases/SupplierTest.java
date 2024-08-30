@@ -18,7 +18,7 @@ public class SupplierTest extends BasePage {
 	public void setUp() throws InterruptedException {
 		super.setup();
 		supplierPage = new SupplierPage(driver);
-		supplierPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		supplierPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/supplier");
 		Thread.sleep(5000);

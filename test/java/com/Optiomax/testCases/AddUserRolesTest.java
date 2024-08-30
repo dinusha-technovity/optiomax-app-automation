@@ -17,7 +17,7 @@ public class AddUserRolesTest extends BasePage {
     public void setupPage() throws InterruptedException {
         addUserRolesPage = new AddUserRolesPage(driver);
         addUserRolesPage = PageFactory.initElements(driver, AddUserRolesPage.class);
-        addUserRolesPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        addUserRolesPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/Roles");
         Thread.sleep(5000);

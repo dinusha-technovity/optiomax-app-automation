@@ -25,8 +25,6 @@ public class AddUserRolesPage extends BasePage {
     By errorMessage = By.xpath("");
     By nextButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div[2]/nav/ul/li[4]/button");
 
-    // Actions
-
     public void login(String email, String password) {
         driver.findElement(emailField).sendKeys(email);
         driver.findElement(passwordField).sendKeys(password);

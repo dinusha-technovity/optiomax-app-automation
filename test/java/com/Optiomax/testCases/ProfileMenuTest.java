@@ -17,7 +17,7 @@ public class ProfileMenuTest extends BasePage {
         super.setup();
         this.driver = super.driver;
         profileMenuPage = new ProfileMenuPage(driver);
-        profileMenuPage.signIn("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        profileMenuPage.signIn("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         profileMenuPage.openSidebar();
         Thread.sleep(5000);

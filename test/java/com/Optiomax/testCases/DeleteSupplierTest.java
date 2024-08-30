@@ -17,7 +17,7 @@ public class DeleteSupplierTest extends BasePage {
     public void setUpTest() throws InterruptedException {
         deleteSupplierPage = new DeleteSupplierPage(driver);
         deleteSupplierPage = PageFactory.initElements(driver, DeleteSupplierPage.class);
-        deleteSupplierPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        deleteSupplierPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/supplier");
         Thread.sleep(5000);

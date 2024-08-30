@@ -75,4 +75,5 @@ public class AddOrganizationPage extends BasePage {
     public boolean isErrorMessageDisplayed() {
         return driver.findElement(errorMessage).isDisplayed();
     }
+    
 }

@@ -16,7 +16,7 @@ public class AddNewAssetRequisitionTest extends BasePage {
     public void setUp() throws InterruptedException {
 		super.setup();
         assetRequisitionPage = new AddNewAssetRequisitionPage(driver);
-		assetRequisitionPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+		assetRequisitionPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/asset_requisitions");
 		Thread.sleep(5000);

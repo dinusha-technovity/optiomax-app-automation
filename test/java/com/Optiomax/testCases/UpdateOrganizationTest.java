@@ -15,7 +15,7 @@ public class UpdateOrganizationTest extends BasePage {
     public void setUpTest() throws InterruptedException {
         updateOrganizationPage = new UpdateOrganizationPage(driver);
         updateOrganizationPage = PageFactory.initElements(driver, UpdateOrganizationPage.class);
-        updateOrganizationPage.login("chamoddushyantha2017@gmail.com", "UMwI4u3w");
+        updateOrganizationPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/organization");
         Thread.sleep(5000);
