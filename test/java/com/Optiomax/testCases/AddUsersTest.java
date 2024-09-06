@@ -6,8 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.AddUsersPage;
-import com.Optiomax.pageObjetcs.BasePage;
+import com.Optiomax.pageObjects.AddUsersPage;
+import com.Optiomax.pageObjects.BasePage;
 
 public class AddUsersTest extends BasePage {
 

@@ -5,8 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.AddWorkflowPage;
-import com.Optiomax.pageObjetcs.BasePage;
+import com.Optiomax.pageObjects.AddWorkflowPage;
+import com.Optiomax.pageObjects.BasePage;
 
 public class AddWorkflowTest extends BasePage {
 

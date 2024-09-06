@@ -4,8 +4,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.DeleteUsersPage;
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.DeleteUsersPage;
 
 public class DeleteUsersTest extends BasePage {
 

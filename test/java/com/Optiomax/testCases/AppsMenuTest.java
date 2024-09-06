@@ -5,8 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.AppsMenuPage;
-import com.Optiomax.pageObjetcs.BasePage;
+import com.Optiomax.pageObjects.AppsMenuPage;
+import com.Optiomax.pageObjects.BasePage;
 
 import java.util.Arrays;
 import java.util.List;

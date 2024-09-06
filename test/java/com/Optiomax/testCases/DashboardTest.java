@@ -4,8 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.DashboardPage;
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.DashboardPage;
 
 public class DashboardTest extends BasePage {
     private DashboardPage dashboardPage;

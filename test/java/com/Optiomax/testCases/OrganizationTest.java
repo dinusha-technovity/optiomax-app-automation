@@ -3,12 +3,14 @@ package com.Optiomax.testCases;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.OrganizationPage;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.Dimension;
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.OrganizationPage;
 
 
 public class OrganizationTest extends BasePage {

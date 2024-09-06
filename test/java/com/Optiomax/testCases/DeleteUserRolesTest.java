@@ -4,8 +4,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.DeleteUserRolesPage;
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.DeleteUserRolesPage;
 
 public class DeleteUserRolesTest extends BasePage {
     DeleteUserRolesPage deleteUserRolesPage;

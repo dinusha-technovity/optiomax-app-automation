@@ -4,8 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.AddProcurementStaffPage;
-import com.Optiomax.pageObjetcs.BasePage;
+import com.Optiomax.pageObjects.AddProcurementStaffPage;
+import com.Optiomax.pageObjects.BasePage;
 
 import org.testng.annotations.AfterClass;
 

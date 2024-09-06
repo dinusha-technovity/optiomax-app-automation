@@ -1,11 +1,12 @@
 package com.Optiomax.testCases;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.UpdateOrganizationPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.UpdateOrganizationPage;
 
 public class UpdateOrganizationTest extends BasePage {
     

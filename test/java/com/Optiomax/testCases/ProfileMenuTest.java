@@ -5,8 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.ProfileMenuPage;
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.ProfileMenuPage;
 
 public class ProfileMenuTest extends BasePage {
     private WebDriver driver;

@@ -1,23 +1,23 @@
 package com.Optiomax.testCases;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.ProcurementInitiateFormPage;
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.ProcurementInitiateFormPage;
 
 public class ProcurementInitiateFormTest extends BasePage {
 
     private ProcurementInitiateFormPage procurementInitiateFormPage;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() throws InterruptedException {
 		super.setup();
 		procurementInitiateFormPage = new ProcurementInitiateFormPage(driver);
-		procurementInitiateFormPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+		procurementInitiateFormPage.login("ruvinya@gmail.com", "ruvinya1234");
 		Thread.sleep(5000);
-		driver.get("http://app.optiomax.com/dashboard/supplier");
+		driver.get("http://app.optiomax.com/dashboard/procurement_initiate");
 		Thread.sleep(5000);
     }
 
@@ -28,14 +28,14 @@ public class ProcurementInitiateFormTest extends BasePage {
 
     @Test(priority = 2)
     public void verifyFormSubmissionWithAllFields() {
-        procurementInitiateFormPage.searchRequisition("he5d26y5");
-        procurementInitiateFormPage.selectRequisition("he5d26y5");
+        procurementInitiateFormPage.searchRequisition("qilz5jby");
+        procurementInitiateFormPage.selectRequisition("qilz5jby");
         procurementInitiateFormPage.addItemToSelected();
         procurementInitiateFormPage.editQuantity("10");
         procurementInitiateFormPage.editBudget("5000");
         procurementInitiateFormPage.uploadFile("C:\\path\\to\\file.png");
         procurementInitiateFormPage.uploadRFP("C:\\path\\to\\document.pdf");
-        procurementInitiateFormPage.selectRequiredDate("08/04/2024");
+        procurementInitiateFormPage.selectRequiredDate("09/26/2024");
         procurementInitiateFormPage.enterComment("Test comment");
         procurementInitiateFormPage.submitForm();
         Assert.assertTrue(procurementInitiateFormPage.isFormSubmittedSuccessfully(), "Form is not submitted successfully with all fields");
@@ -93,7 +93,7 @@ public class ProcurementInitiateFormTest extends BasePage {
 
     @Test(priority = 11)
     public void verifyRFPUpload() {
-        procurementInitiateFormPage.uploadRFP("C:\\path\\to\\document.pdf");
+        procurementInitiateFormPage.uploadRFP("C:\\Users\\Janodya\\Downloads\\asset documents.png");
         Assert.assertTrue(procurementInitiateFormPage.isRFPUploaded("document.pdf"), "RFP document is not uploaded successfully");
     }
 
@@ -104,38 +104,26 @@ public class ProcurementInitiateFormTest extends BasePage {
     }
     
     @Test(priority = 13)
-    public void verifyRFUpload() {
-    	procurementInitiateFormPage.uploadRFP("C:\\Users\\Janodya\\Downloads\\Asset Document.png");
-    	Assert.assertEquals(procurementInitiateFormPage.isFileUploaded("Asset Document"), "Docurement uploaded successfully.");
+    public void verifySelectedItems() {
+    	procurementInitiateFormPage.selectedItems();
+    	procurementInitiateFormPage.clickSubmit();
+    	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Item is not selected correctly.");
     }
     
     @Test(priority = 14)
-    public void verfiyAssetDocumentUpload() {
-    	procurementInitiateFormPage.uploadFile("");
-    	Assert.assertEquals(procurementInitiateFormPage.isFileUploaded("Asset Documents"), "Asset Documents uploaded successfully.");
+    public void verifyItems() {
+    	procurementInitiateFormPage.selectedItems();
+    	procurementInitiateFormPage.clickSubmit();
+    	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Items are not selected correctly.");
     }
     
-//    @Test(priority = 13)
-//    public void verifySelectedItems() {
-//    	procurementInitiateFormPage.selectedItems();
-//    	procurementInitiateFormPage.clickSubmit();
-//    	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Item is not selected correctly.");
-//    }
-//    
-//    @Test(priority = 14)
-//    public void verifyItems() {
-//    	procurementInitiateFormPage.selectedItems();
-//    	procurementInitiateFormPage.clickSubmit();
-//    	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Items are not selected correctly.");
-//    }
-//    
-//    @Test(priority = 15)
-//    public void verifyAddMultipleItems() {
-//    	procurementInitiateFormPage.selectedItems();
-//    	procurementInitiateFormPage.selectedItems();
-//    	procurementInitiateFormPage.clickSubmit();
-//    	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Multiple items are not selected.");
-//    }
+    @Test(priority = 15)
+    public void verifyAddMultipleItems() {
+    	procurementInitiateFormPage.selectedItems();
+    	procurementInitiateFormPage.selectedItems();
+    	procurementInitiateFormPage.clickSubmit();
+    	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Multiple items are not selected.");
+    }
    
 }
 

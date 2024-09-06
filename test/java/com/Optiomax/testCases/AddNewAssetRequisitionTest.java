@@ -6,8 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.AddNewAssetRequisitionPage;
-import com.Optiomax.pageObjetcs.BasePage;
+import com.Optiomax.pageObjects.AddNewAssetRequisitionPage;
+import com.Optiomax.pageObjects.BasePage;
 
 public class AddNewAssetRequisitionTest extends BasePage {
     private AddNewAssetRequisitionPage assetRequisitionPage;
@@ -16,7 +16,7 @@ public class AddNewAssetRequisitionTest extends BasePage {
     public void setUp() throws InterruptedException {
 		super.setup();
         assetRequisitionPage = new AddNewAssetRequisitionPage(driver);
-		assetRequisitionPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+		assetRequisitionPage.login("ruvinya@gmail.com", "ruvinya1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/asset_requisitions");
 		Thread.sleep(5000);
@@ -37,16 +37,22 @@ public class AddNewAssetRequisitionTest extends BasePage {
         assetRequisitionPage.selectPriority("High");
         assetRequisitionPage.enterRequiredDate("08/20/2024");
         assetRequisitionPage.clickOrganization();
+        Thread.sleep(3000);
         assetRequisitionPage.selectOrganization();
+        Thread.sleep(3000);
+        assetRequisitionPage.clickSpace();
         assetRequisitionPage.enterReasonForRequisition("Test Reason");
         assetRequisitionPage.enterBusinessImpact("Test Business Impact");
-        assetRequisitionPage.attachFile("");
+        //assetRequisitionPage.attachFile("");
         assetRequisitionPage.clickSuppliers();
         assetRequisitionPage.selectSupplier();
-        
+        assetRequisitionPage.clickSpace();
         assetRequisitionPage.clickAddItem();
         assetRequisitionPage.clickSave();
         assetRequisitionPage.submitForm();
+        Thread.sleep(3000);
+        assetRequisitionPage.selectWorkflow();
+        assetRequisitionPage.selectAssignWorkflow();
         
 
         // Assert form submission by checking the confirmation message

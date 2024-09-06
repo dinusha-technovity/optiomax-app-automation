@@ -3,20 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Optiomax.testCases.AddOrganizationTest">
+      <class name="com.Optiomax.testCases.ProcurementInitiateFormTest">
         <methods>
-          <include name="testMissingRequiredFields"/>
+          <include name="setUp"/>
+          <include name="verifyFormDisplay"/>
+          <include name="verifyFormSubmissionWithAllFields"/>
+          <include name="verifyFormSubmissionWithoutMandatoryFields"/>
           <include name="setup"/>
-          <include name="testIncorrectTelephoneNumberFormat"/>
-          <include name="testDuplicateOrganization"/>
-          <include name="testInvalidEmailFormat"/>
-          <include name="testAddNewOrganization"/>
-          <include name="testMaxFieldLengths"/>
           <include name="teardown"/>
-          <include name="setUpTest"/>
-          <include name="testSpecialCharacters"/>
         </methods>
-      </class> <!-- com.Optiomax.testCases.AddOrganizationTest -->
+      </class> <!-- com.Optiomax.testCases.ProcurementInitiateFormTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

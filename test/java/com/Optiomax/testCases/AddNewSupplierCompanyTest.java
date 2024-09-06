@@ -9,8 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.AddNewSupplierCompanyPage;
-import com.Optiomax.pageObjetcs.BasePage;
+import com.Optiomax.pageObjects.AddNewSupplierCompanyPage;
+import com.Optiomax.pageObjects.BasePage;
 
 public class AddNewSupplierCompanyTest extends BasePage {
 

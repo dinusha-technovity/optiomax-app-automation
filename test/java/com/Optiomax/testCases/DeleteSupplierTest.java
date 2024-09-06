@@ -1,14 +1,15 @@
 package com.Optiomax.testCases;
 
 import org.testng.annotations.Test;
+
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.DeleteSupplierPage;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.DeleteSupplierPage;
 
 public class DeleteSupplierTest extends BasePage {
     DeleteSupplierPage deleteSupplierPage;

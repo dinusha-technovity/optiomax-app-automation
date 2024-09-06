@@ -2,8 +2,8 @@ package com.Optiomax.testCases;
 
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.ThemeTogglePage;
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.ThemeTogglePage;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;

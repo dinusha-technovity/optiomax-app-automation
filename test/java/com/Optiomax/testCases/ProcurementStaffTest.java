@@ -5,8 +5,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-import com.Optiomax.pageObjetcs.BasePage;
-import com.Optiomax.pageObjetcs.ProcurementStaffPage;
+import com.Optiomax.pageObjects.BasePage;
+import com.Optiomax.pageObjects.ProcurementStaffPage;
 
 import org.openqa.selenium.By;
 
@@ -17,9 +17,9 @@ public class ProcurementStaffTest extends BasePage {
     public void setUp() throws InterruptedException {
         super.setup();
         procurementStaffPage = new ProcurementStaffPage(driver);
-		procurementStaffPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+		procurementStaffPage.login("ruvinya@gmail.com", "ruvinya1234");
 		Thread.sleep(5000);
-		driver.get("http://app.optiomax.com/dashboard/workflow");
+		driver.get("http://app.optiomax.com/dashboard/procurement_initiate");
 		Thread.sleep(5000); 
     }
 
@@ -42,7 +42,7 @@ public class ProcurementStaffTest extends BasePage {
 
     @Test
     public void testUpdateButtonFunctionality() {
-        procurementStaffPage.clickEditButton();
+        procurementStaffPage.clickUpdateButton();
         // Verify that the edit pop-up window appears
         Assert.assertTrue(driver.findElement(By.id("editMemberPopup")).isDisplayed(), "The 'Edit Member' popup did not appear.");
     }
