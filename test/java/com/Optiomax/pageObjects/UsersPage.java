@@ -6,13 +6,13 @@ import org.openqa.selenium.WebElement;
 
 public class UsersPage extends BasePage {
 	
-    // Web elements for sign in page
     private By emailField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input");
     private By passwordField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[2]/div/input");
     private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 	
     private By addNewUsersButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/button");
+    private By addNewUsersClose = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/a");
     private By searchBox = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[1]/div/div/input");
     private By exportCSVButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/button[1]");
     private By filterButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/button[2]");
@@ -34,6 +34,10 @@ public class UsersPage extends BasePage {
 
     public void clickAddNewUsers() {
         driver.findElement(addNewUsersButton).click();
+    }
+    
+    public void clickAddNewUsersClose() {
+        driver.findElement(addNewUsersClose).click();
     }
 
     public void enterSearchQuery(String query) {

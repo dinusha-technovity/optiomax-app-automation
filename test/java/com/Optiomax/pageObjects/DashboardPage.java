@@ -29,12 +29,19 @@ public class DashboardPage extends BasePage {
         this.driver = driver;
     }
 
+//    public void login(String email, String password) {
+//        driver.findElement(emailField).sendKeys(email);
+//        driver.findElement(passwordField).sendKeys(password);
+//        driver.findElement(rememberMeCheckbox).click();
+//        driver.findElement(signInButton).click();
+//        //new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(sidebarIcon)).click();
+//    }
+    
     public void login(String email, String password) {
         driver.findElement(emailField).sendKeys(email);
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(rememberMeCheckbox).click();
         driver.findElement(signInButton).click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(sidebarIcon)).click();
     }
 
     public void clickSidebarIcon() {

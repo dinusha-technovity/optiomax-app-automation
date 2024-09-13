@@ -18,13 +18,13 @@ public class ProcurementStaffPage extends BasePage {
     private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
     
-    private By staffCards = By.xpath("");
+    private By staffCards = By.cssSelector("div[class='grid gap-2 2xl:grid-cols-5 min-[1200px]:grid-cols-4 min-[768px]:grid-cols-3 min-[640px]:grid-cols-2 mb-1 rounded bg-white dark:bg-[#121212]']");
     private By addNewMemberButton = By.xpath("//button[normalize-space()='Add New Member']");
-    private By updateButton = By.cssSelector("/html/body/main/div/div/main/div/div/div[2]/div/div[1]/div[2]/div/a[1]/svg/path");
-    private By deleteButton = By.cssSelector("/html/body/main/div/div/main/div/div/div[2]/div/div[1]/div[2]/div/a[2]");
-    private By searchInput = By.cssSelector("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[1]/div/div/input");
-    private By noResultsMessage = By.cssSelector("//p[normalize-space()='No data available']");
-  //  private By results = By.xpath("/html/body/div/div/div/div[2]/div[1]/div/div/div[5]/div/div/div");
+    private By updateButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[1]/div[2]/div/a[1]");
+    private By deleteButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[1]/div[2]/div/a[2]");
+    private By searchInput = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[1]/div/div/input");
+    private By noResultsMessage = By.xpath("//p[normalize-space()='No data available']");
+//    private By results = By.xpath("/html/body/div/div/div/div[2]/div[1]/div/div/div[5]/div/div/div");
     
     public void login(String email, String password) {
         driver.findElement(emailField).sendKeys(email);

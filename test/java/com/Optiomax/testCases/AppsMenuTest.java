@@ -21,7 +21,7 @@ public class AppsMenuTest extends BasePage {
         setup();
         this.driver = super.driver;
         appsMenuPage = new AppsMenuPage(driver);
-        appsMenuPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+        appsMenuPage.login("sithum@gmail.com", "chamod1234");
         Thread.sleep(5000);
     }
  

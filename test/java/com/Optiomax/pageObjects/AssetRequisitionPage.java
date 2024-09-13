@@ -28,6 +28,12 @@ public class AssetRequisitionPage {
     private By closeAssetRequisitionPopup = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/a");
     //private By requestId = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[1]/div[1]/div[2]/div[1]");
     //private By requestDate = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[1]/div[1]/div[2]/div[2]");
+    private By exportCSVButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/button[1]");
+    private By filterButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/button[2]");
+    private By listViewToggle = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/div[2]/button[2]");
+    private By gridViewToggle = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/div[2]/button[1]");
+    private By paginationNextButton = By.xpath("//button[normalize-space()='Next']");
+    private By paginationPreviousButton = By.xpath("//button[normalize-space()='Previous']");
     
     public void login(String email, String password) {
         driver.findElement(emailField).sendKeys(email);
@@ -98,4 +104,31 @@ public class AssetRequisitionPage {
         return driver.findElements(assetRequisitionCards).get(index).findElement(locator);
     }
     
+    public void clickExportCSV() {
+        driver.findElement(exportCSVButton).click();
+    }
+
+    public void clickFilterButton() {
+        driver.findElement(filterButton).click();
+    }
+
+    public void toggleListView() {
+        driver.findElement(listViewToggle).click();
+    }
+
+    public void toggleGridView() {
+        driver.findElement(gridViewToggle).click();
+    }
+
+    public void clickNextPage() {
+        driver.findElement(paginationNextButton).click();
+    }
+
+    public void clickPreviousPage() {
+        driver.findElement(paginationPreviousButton).click();
+    }
+
+    public boolean isElementPresent(By locator) {
+        return !driver.findElements(locator).isEmpty();
+    }
 }

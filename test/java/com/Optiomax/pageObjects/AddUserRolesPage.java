@@ -9,21 +9,19 @@ public class AddUserRolesPage extends BasePage {
         this.driver = driver;
     }
     
-	// Web elements for sign in page
     private By emailField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input");
     private By passwordField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[2]/div/input");
     private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 
-    // Web elements for add new user role page
-    By addNewUserRoleButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/button");
-    By roleNameInput = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/form/div/div[1]/input");
-    By roleDescriptionInput = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/form/div/div[2]/textarea");
-    By createButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/form/button");
-    By closeButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[1]/button");
-    By successMessage = By.xpath("");
-    By errorMessage = By.xpath("");
-    By nextButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div[2]/nav/ul/li[4]/button");
+    private By addNewUserRoleButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/button");
+    private By roleNameInput = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/form/div/div[1]/input");
+    private By roleDescriptionInput = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/form/div/div[2]/textarea");
+    private By createButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/form/button");
+    private By closeButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/a");
+    private By successMessage = By.xpath("");
+    private By errorMessage = By.xpath("");
+    private By nextButton = By.xpath("//button[normalize-space()='Next']");
 
     public void login(String email, String password) {
         driver.findElement(emailField).sendKeys(email);

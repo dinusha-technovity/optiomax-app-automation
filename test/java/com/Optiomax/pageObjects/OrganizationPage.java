@@ -12,7 +12,6 @@ public class OrganizationPage extends BasePage {
     private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 
-    // Locators
     private By expandCollapseButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div/ul/li/ul/li[1]/div/div[4]/button/div"); 
     private By addOrganizationButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div/ul/li/ul/li[1]/div/div[3]/button[1]"); 
     private By updateOrganizationButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div/ul/li/ul/li[1]/div/div[3]/button[2]");

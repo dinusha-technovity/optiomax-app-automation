@@ -12,7 +12,7 @@ public class SignInPage {
     private By emailField = By.id("email");
     private By passwordField = By.id("password");
     private By rememberMeCheckbox = By.id("remember");
-    private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
+    private By signInButton = By.xpath("//button[@type='submit']");
 
     // Constructor
     public SignInPage(WebDriver driver) {
@@ -51,6 +51,10 @@ public class SignInPage {
         Thread.sleep(3000); 
         clickSignIn();
         Thread.sleep(3000);
+    }
+    
+    public boolean isPageLoaded() {
+    	return driver.getPageSource().contains("dashboard");
     }
 }
 

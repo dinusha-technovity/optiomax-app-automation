@@ -18,7 +18,7 @@ public class AddUsersPage extends BasePage {
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 
     // Locators
-    By addNewUserButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/button");
+    By addNewUserButton = By.xpath("//button[normalize-space()='Add New Users']");
     By userNameField = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[1]/input");
     By emailsField = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[2]/input");
     By fullNameField = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[3]/input");

@@ -3,16 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Optiomax.testCases.ProcurementInitiateFormTest">
+      <class name="com.Optiomax.testCases.ProcurementStaffTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyFormDisplay"/>
-          <include name="verifyFormSubmissionWithAllFields"/>
-          <include name="verifyFormSubmissionWithoutMandatoryFields"/>
+          <include name="testStaffCardsDisplay"/>
+          <include name="testUpdateButtonFunctionality"/>
+          <include name="testDeleteButtonFunctionality"/>
+          <include name="testPageLoad"/>
+          <include name="testSearchFunctionalityWithPartialNames"/>
+          <include name="tearDown"/>
+          <include name="testAddNewMemberButton"/>
+          <include name="testSearchFunctionalityWithValidInput"/>
           <include name="setup"/>
+          <include name="setUp"/>
           <include name="teardown"/>
+          <include name="testErrorHandlingForNonExistentStaff"/>
         </methods>
-      </class> <!-- com.Optiomax.testCases.ProcurementInitiateFormTest -->
+      </class> <!-- com.Optiomax.testCases.ProcurementStaffTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

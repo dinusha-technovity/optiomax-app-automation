@@ -3,7 +3,6 @@ package com.Optiomax.testCases;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -21,8 +20,7 @@ public class WorkflowTest extends BasePage {
 	public void setUp() throws InterruptedException {
 		super.setup();
 		workflowPage = new WorkflowPage(driver);
-		//workflowPage = PageFactory.initElements(driver, WorkflowPage.class);
-		workflowPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+		workflowPage.login("sithum@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/workflow");
 		Thread.sleep(5000); 
@@ -31,56 +29,53 @@ public class WorkflowTest extends BasePage {
 	@Test(priority = 1)
 	public void verifyAddNewWorkflow() throws InterruptedException {
 		workflowPage.clickAddNewWorkflow();
-
+        Thread.sleep(3000);
+        
 		// Add assertions to verify the new workflow creation
-		WebElement newWorkflowForm = driver
-				.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]"));
+		WebElement newWorkflowForm = driver.findElement(By.xpath("//h3[normalize-space()='Add New Workflow']"));
 		Assert.assertTrue(newWorkflowForm.isDisplayed(), "New workflow form is not displayed.");
-
 		workflowPage.clickAddNewWorkflowCloseBtn();
-
-		Thread.sleep(3000);
+        driver.navigate().refresh();
 	}
 
 	@Test(priority = 2)
 	public void verifyUpdateWorkflow() throws InterruptedException {
+        Thread.sleep(3000);
 		workflowPage.clickUpdateWorkflow();
-
+        Thread.sleep(3000);
+        
 		// Add assertions to verify the update workflow
-		WebElement updateWorkflowForm = driver
-				.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[3]/div[2]/div/a[1]"));
+		WebElement updateWorkflowForm = driver.findElement(By.xpath("//h3[normalize-space()='Update Existing Workflow']"));
 		Assert.assertTrue(updateWorkflowForm.isDisplayed(), "Update workflow form is not displayed.");
-
 		workflowPage.clickUpdateWorkflowCloseBtn();
-
-		Thread.sleep(3000);
+		driver.navigate().refresh();
 	}
 
 	@Test(priority = 3)
 	public void verifyDeleteWorkflow() throws InterruptedException {
+		Thread.sleep(3000);
 		workflowPage.clickDeleteWorkflow();
-
+		Thread.sleep(3000);
+		
 		// Add assertions to verify the delete confirmation dialog
-		WebElement deleteConfirmDialog = driver
-				.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]"));
+		WebElement deleteConfirmDialog = driver.findElement(By.xpath("//h3[normalize-space()='Remove Workflow']"));
 		Assert.assertTrue(deleteConfirmDialog.isDisplayed(), "Delete confirmation dialog is not displayed.");
-
 		workflowPage.clickDeleteWorkflowCloseBtn();
-
 		Thread.sleep(3000);
 	}
 
 	@Test(priority = 4)
 	public void searchWorkflow() throws InterruptedException {
-		workflowPage.searchWorkflow("First Workflow");
+		workflowPage.searchWorkflow("User Management");
+		Thread.sleep(3000);
 		List<WebElement> items = workflowPage.getWorkflowItems();
 		Assert.assertTrue(items.size() > 0, "No workflows found.");
+		
 		// Additional assertion to verify the search result matches the query
 		for (WebElement item : items) {
-			Assert.assertTrue(item.getText().contains("First Workflow"),
+			Assert.assertTrue(item.getText().contains("User Management"),
 					"Workflow item does not match the search query.");
 		}
-
 		Thread.sleep(3000);
 	}
 
@@ -89,9 +84,8 @@ public class WorkflowTest extends BasePage {
 		workflowPage.searchWorkflow("NonExistentWorkflow");
 		List<WebElement> items = workflowPage.getWorkflowItems();
 		Thread.sleep(3000);
-		//Assert.assertTrue(items.isDisplayed(), "No data available");
 
-		WebElement message = driver.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/p"));
+		WebElement message = driver.findElement(By.xpath("//p[normalize-space()='No data available']"));
 		Assert.assertTrue(message.isDisplayed(), "No data available message is not displayed.");
 	}
 
@@ -161,39 +155,28 @@ public class WorkflowTest extends BasePage {
 			Assert.assertTrue(title.isDisplayed(), "Title is not displayed.");
 		}
 	}
-	
-	@Test(priority =12)
-	public void verifyList() {
-		workflowPage.clickListView();
-		List<WebElement> items = workflowPage.getWorkflowItems();
-		for(WebElement item:items) {
-			WebElement title = item.findElement(By.xpath(""));
-			Assert.assertTrue(title.isDisplayed(), "Title is not displayed.");
-		}
-	}
-	
 
-	@Test(priority = 12)
-	public void verifyResponsiveDesign() {
-
-		// Define different screen dimensions for responsive testing
-		Dimension[] dimensions = { new Dimension(1920, 1080), // Desktop
-				new Dimension(1366, 768), // Laptop
-				new Dimension(768, 1024), // Tablet
-				new Dimension(375, 667) // Mobile
-		};
-
-		for (Dimension dimension : dimensions) {
-			driver.manage().window().setSize(dimension);
-			// Add a wait to allow page to render
-			try {
-				Thread.sleep(2000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
-		}
-	}	
+//	@Test(priority = 12)
+//	public void verifyResponsiveDesign() {
+//
+//		// Define different screen dimensions for responsive testing
+//		Dimension[] dimensions = { new Dimension(1920, 1080), // Desktop
+//				new Dimension(1366, 768), // Laptop
+//				new Dimension(768, 1024), // Tablet
+//				new Dimension(375, 667) // Mobile
+//		};
+//
+//		for (Dimension dimension : dimensions) {
+//			driver.manage().window().setSize(dimension);
+//			// Add a wait to allow page to render
+//			try {
+//				Thread.sleep(2000);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//
+//		}
+//	}	
 	
 	@AfterClass
 	public void tearDown() {

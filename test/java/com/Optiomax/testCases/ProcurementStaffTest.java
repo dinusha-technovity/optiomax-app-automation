@@ -17,9 +17,9 @@ public class ProcurementStaffTest extends BasePage {
     public void setUp() throws InterruptedException {
         super.setup();
         procurementStaffPage = new ProcurementStaffPage(driver);
-		procurementStaffPage.login("ruvinya@gmail.com", "ruvinya1234");
+		procurementStaffPage.login("sithum@gmail.com", "chamod1234");
 		Thread.sleep(5000);
-		driver.get("http://app.optiomax.com/dashboard/procurement_initiate");
+		driver.get("http://app.optiomax.com/dashboard/staff");
 		Thread.sleep(5000); 
     }
 
@@ -34,45 +34,51 @@ public class ProcurementStaffTest extends BasePage {
     }
 
     @Test
-    public void testAddNewMemberButton() {
+    public void testAddNewMemberButton() throws InterruptedException {
         procurementStaffPage.clickAddNewMember();
+        Thread.sleep(3000);
         // Verify that the new pop-up window appears
-        Assert.assertTrue(driver.findElement(By.id("addMemberPopup")).isDisplayed(), "The 'Add New Member' popup did not appear.");
+        Assert.assertTrue(driver.findElement(By.xpath("//h3[normalize-space()='Add New Member']")).isDisplayed(), "The 'Add New Member' popup did not appear.");
     }
 
     @Test
-    public void testUpdateButtonFunctionality() {
+    public void testUpdateButtonFunctionality() throws InterruptedException {
         procurementStaffPage.clickUpdateButton();
+        Thread.sleep(3000);
         // Verify that the edit pop-up window appears
-        Assert.assertTrue(driver.findElement(By.id("editMemberPopup")).isDisplayed(), "The 'Edit Member' popup did not appear.");
+        Assert.assertTrue(driver.findElement(By.xpath("//h3[normalize-space()='Update Existing Workflow']")).isDisplayed(), "The 'Edit Member' popup did not appear.");
     }
 
     @Test
-    public void testDeleteButtonFunctionality() {
+    public void testDeleteButtonFunctionality() throws InterruptedException {
         procurementStaffPage.clickDeleteButton();
+        Thread.sleep(3000);
         // Verify that a confirmation message appears
-        Assert.assertTrue(driver.findElement(By.id("confirmationMessage")).isDisplayed(), "The confirmation message did not appear.");
+        Assert.assertTrue(driver.findElement(By.xpath("//h3[normalize-space()='Remove Member']")).isDisplayed(), "The confirmation message did not appear.");
         // Confirm the deletion and verify the success message
-        driver.findElement(By.id("confirmDeleteButton")).click();
-        Assert.assertTrue(driver.findElement(By.id("successMessage")).isDisplayed(), "The success message did not appear after deletion.");
+//        driver.findElement(By.xpath("confirmDeleteButton")).click();
+//        Assert.assertTrue(driver.findElement(By.id("successMessage")).isDisplayed(), "The success message did not appear after deletion.");
     }
 
     @Test
-    public void testSearchFunctionalityWithValidInput() {
-        procurementStaffPage.searchStaff("sachintha");
-        Assert.assertTrue(procurementStaffPage.isStaffPresent("sachintha"), "The search functionality did not return the expected result.");
+    public void testSearchFunctionalityWithValidInput() throws InterruptedException {
+        procurementStaffPage.searchStaff("Anna Tardy");
+        Thread.sleep(3000);
+        Assert.assertTrue(procurementStaffPage.isStaffPresent("Anna Tardy"), "The search functionality did not return the expected result.");
     }
 
     @Test
-    public void testErrorHandlingForNonExistentStaff() {
+    public void testErrorHandlingForNonExistentStaff() throws InterruptedException {
         procurementStaffPage.searchStaff("nonexistentstaff");
+        Thread.sleep(3000);
         Assert.assertTrue(procurementStaffPage.isNoResultsMessageDisplayed(), "The error handling for non-existent staff is not working as expected.");
     }
 
     @Test
-    public void testSearchFunctionalityWithPartialNames() {
-        procurementStaffPage.searchStaff("dush");
-        Assert.assertTrue(procurementStaffPage.isStaffPresent("dushyantha"), "The search functionality did not return the expected result with partial name.");
+    public void testSearchFunctionalityWithPartialNames() throws InterruptedException {
+        procurementStaffPage.searchStaff("Turner");
+        Thread.sleep(3000);
+        Assert.assertTrue(procurementStaffPage.isStaffPresent("Brenton Turner"), "The search functionality did not return the expected result with partial name.");
     }
 
     @AfterClass

@@ -13,25 +13,23 @@ public class WorkflowPage {
         this.driver = driver;
     }
 
-    // Web elements for sign in page
     private By emailField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input");
     private By passwordField = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[2]/div/input");
     private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
-    
-    // Web elements for workflow page  
-    By addNewWorkflowBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/button");
-    By updateWorkflowBtn = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[3]/div[2]/div/a[1]");
-    By deleteWorkflowBtn = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[3]/div[2]/div/a[2]");
+     
+    By addNewWorkflowBtn = By.xpath("//button[normalize-space()='Add new workflow']");
+    By updateWorkflowBtn = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[1]/div[2]/div/a[1]");
+    By deleteWorkflowBtn = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[2]/div[2]/div/a[2]");
     By searchInput = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[1]/div/div/input");
     By exportCSVBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/button[1]");
     By filterBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/button[2]");
     By gridViewBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/div[2]/button[1]");
     By listViewBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/div[2]/button[2]");
     By workflowItems = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div");
-    By addNewWorkflowCloseBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[1]/button");
-    By updateWorkflowCloseBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[1]/button");
-    By deleteWorkflowCloseBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[1]/button");
+    By addNewWorkflowCloseBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/a");
+    By updateWorkflowCloseBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/a");
+    By deleteWorkflowCloseBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/a");
     By errorMessage = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/p");
   
     public void login(String email, String password) {
@@ -41,7 +39,6 @@ public class WorkflowPage {
         driver.findElement(signInButton).click();
     }
 
-    // Methods
     public void clickAddNewWorkflow() {
         driver.findElement(addNewWorkflowBtn).click();
     }
@@ -91,8 +88,7 @@ public class WorkflowPage {
     public void clickDeleteWorkflowCloseBtn() {
     	driver.findElement(deleteWorkflowCloseBtn).click();
     }
-    
-    
+      
 }
 
 

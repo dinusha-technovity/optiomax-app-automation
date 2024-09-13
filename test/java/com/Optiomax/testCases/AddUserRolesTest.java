@@ -17,7 +17,7 @@ public class AddUserRolesTest extends BasePage {
     public void setupPage() throws InterruptedException {
         addUserRolesPage = new AddUserRolesPage(driver);
         addUserRolesPage = PageFactory.initElements(driver, AddUserRolesPage.class);
-        addUserRolesPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+        addUserRolesPage.login("sithum@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/Roles");
         Thread.sleep(5000);
@@ -26,13 +26,15 @@ public class AddUserRolesTest extends BasePage {
     @Test(priority = 1)
     public void verifyAddNewUserRoleButtonFunctionality() throws InterruptedException {
         addUserRolesPage.clickAddNewUserRoleButton();
-        Assert.assertTrue(driver.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]")).isDisplayed(), "Role Name input field is not displayed");
-        addUserRolesPage.clickCloseButton();
         Thread.sleep(3000);
+        Assert.assertTrue(driver.findElement(By.xpath("//h3[normalize-space()='Add New Role']")).isDisplayed(), "Role Name input field is not displayed");
+        addUserRolesPage.clickCloseButton();
+        driver.navigate().refresh();
     }
 
     @Test(priority = 2)
     public void testAddingNewUserRoleWithValidInputs() throws InterruptedException {
+    	Thread.sleep(3000);
         addUserRolesPage.clickAddNewUserRoleButton();
         addUserRolesPage.enterRoleName("Test Role");
         addUserRolesPage.enterRoleDescription("Test Description");
