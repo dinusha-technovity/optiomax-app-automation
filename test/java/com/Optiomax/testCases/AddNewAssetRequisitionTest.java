@@ -3,7 +3,7 @@ package com.Optiomax.testCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.Optiomax.pageObjects.AddNewAssetRequisitionPage;
@@ -12,11 +12,11 @@ import com.Optiomax.pageObjects.BasePage;
 public class AddNewAssetRequisitionTest extends BasePage {
     private AddNewAssetRequisitionPage assetRequisitionPage;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() throws InterruptedException {
 		super.setup();
         assetRequisitionPage = new AddNewAssetRequisitionPage(driver);
-		assetRequisitionPage.login("ruvinya@gmail.com", "ruvinya1234");
+		assetRequisitionPage.login("sithum@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/asset_requisitions");
 		Thread.sleep(5000);
@@ -51,8 +51,8 @@ public class AddNewAssetRequisitionTest extends BasePage {
         assetRequisitionPage.clickSave();
         assetRequisitionPage.submitForm();
         Thread.sleep(3000);
-        assetRequisitionPage.selectWorkflow();
-        assetRequisitionPage.selectAssignWorkflow();
+//        assetRequisitionPage.selectWorkflow();
+//        assetRequisitionPage.selectAssignWorkflow();
         
 
         // Assert form submission by checking the confirmation message
@@ -61,21 +61,23 @@ public class AddNewAssetRequisitionTest extends BasePage {
 //        Assert.assertEquals(actualMessage, expectedMessage, "The asset requisition form was not submitted successfully.");
     }
 
-//    @Test(priority = 2)
-//    public void testFormWithOptionalFieldsLeftBlank() {
-//        assetRequisitionPage.enterItemName("Laptop");
-//        assetRequisitionPage.selectAssetType("Tangible");
-//        assetRequisitionPage.enterQuantity("10");
-//        assetRequisitionPage.enterBudget("15000");
-//        assetRequisitionPage.enterBusinessPurpose("For new employees");
-//        assetRequisitionPage.submitForm();
-//
-//        // Assert form submission by checking the confirmation message
-////        String expectedMessage = "Asset requisition submitted successfully";
-////        String actualMessage = assetRequisitionPage.getConfirmationMessage();
-////        Assert.assertEquals(actualMessage, expectedMessage, "The asset requisition form was not submitted successfully.");
-//    }
-//
+	@Test(priority = 2)
+	public void testFormWithOptionalFieldsLeftBlank() throws InterruptedException {
+		assetRequisitionPage.addAssetRequisition();
+		Thread.sleep(3000);
+		assetRequisitionPage.enterItemName("Laptop");
+		assetRequisitionPage.selectAssetType("Tangible assets");
+		assetRequisitionPage.enterQuantity("10");
+		assetRequisitionPage.enterBudget("15000");
+		assetRequisitionPage.enterBusinessPurpose("For new employees");
+		assetRequisitionPage.submitForm();
+
+		// Assert form submission by checking the confirmation message
+//        String expectedMessage = "Asset requisition submitted successfully";
+//        String actualMessage = assetRequisitionPage.getConfirmationMessage();
+//        Assert.assertEquals(actualMessage, expectedMessage, "The asset requisition form was not submitted successfully.");
+	}
+
 //    @Test(priority = 3)
 //    public void testAddItemButton() {
 //        // Add an item

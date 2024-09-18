@@ -1,111 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="0" failed="0" skipped="8">
+<testng-results ignored="0" total="15" passed="5" failed="10" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-13T16:51:37 IST" name="Default suite" finished-at="2024-09-13T16:51:48 IST" duration-ms="10871">
+  <suite started-at="2024-09-18T16:30:21 IST" name="Default suite" finished-at="2024-09-18T16:30:59 IST" duration-ms="38700">
     <groups>
     </groups>
-    <test started-at="2024-09-13T16:51:37 IST" name="Default test" finished-at="2024-09-13T16:51:48 IST" duration-ms="10871">
-      <class name="com.Optiomax.testCases.ProcurementStaffTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:37 IST" name="setup" finished-at="2024-09-13T16:51:43 IST" duration-ms="6053" status="PASS">
+    <test started-at="2024-09-18T16:30:21 IST" name="Default test" finished-at="2024-09-18T16:30:59 IST" duration-ms="38700">
+      <class name="com.Optiomax.testCases.ProcurementInitiateFormTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:21 IST" name="setup" finished-at="2024-09-18T16:30:26 IST" duration-ms="5409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:43 IST" name="setUp" finished-at="2024-09-13T16:51:48 IST" duration-ms="4671" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
-  (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
-  (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:26 IST" name="setUp" finished-at="2024-09-18T16:30:42 IST" duration-ms="16075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddNewMemberButton()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testAddNewMemberButton" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyFormDisplay()[pri:1, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:42 IST" name="verifyFormDisplay" finished-at="2024-09-18T16:30:42 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormDisplay -->
+        <test-method signature="verifyFormSubmissionWithAllFields()[pri:2, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:42 IST" name="verifyFormSubmissionWithAllFields" finished-at="2024-09-18T16:30:58 IST" duration-ms="15609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormSubmissionWithAllFields -->
+        <test-method signature="verifyFormSubmissionWithoutMandatoryFields()[pri:3, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:58 IST" name="verifyFormSubmissionWithoutMandatoryFields" finished-at="2024-09-18T16:30:58 IST" duration-ms="219" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -121,18 +63,98 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.isFormSubmittedSuccessfully(ProcurementInitiateFormPage.java:142)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyFormSubmissionWithoutMandatoryFields(ProcurementInitiateFormTest.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormSubmissionWithoutMandatoryFields -->
+        <test-method signature="verifyProcurementInitiateNumberGeneration()[pri:4, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:58 IST" name="verifyProcurementInitiateNumberGeneration" finished-at="2024-09-18T16:30:58 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProcurementInitiateNumberGeneration -->
+        <test-method signature="verifyRequisitionSearch()[pri:5, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:58 IST" name="verifyRequisitionSearch" finished-at="2024-09-18T16:30:58 IST" duration-ms="146" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='assess-requests']//div[@class='request'][text()='i0q5gc5n']"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=//div[@class='assess-requests']//div[@class='request'][text()='i0q5gc5n']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='assess-requests']//div[@class='request'][text()='i0q5gc5n']"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=//div[@class='assess-requests']//div[@class='request'][text()='i0q5gc5n']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.isRequisitionFound(ProcurementInitiateFormPage.java:110)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyRequisitionSearch(ProcurementInitiateFormTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -154,30 +176,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewMemberButton -->
-        <test-method signature="testDeleteButtonFunctionality()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testDeleteButtonFunctionality" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyRequisitionSearch -->
+        <test-method signature="verifyItemSelection()[pri:6, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:58 IST" name="verifyItemSelection" finished-at="2024-09-18T16:30:58 IST" duration-ms="18" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[1]/div[2]/div/div/input"}
   (Session info: chrome=128.0.6613.138)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[1]/div[2]/div/div/input}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[1]/div[2]/div/div/input"}
   (Session info: chrome=128.0.6613.138)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[1]/div[2]/div/div/input}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -193,18 +215,20 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.addItemToSelected(ProcurementInitiateFormPage.java:70)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyItemSelection(ProcurementInitiateFormTest.java:71)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -226,30 +250,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteButtonFunctionality -->
-        <test-method signature="testErrorHandlingForNonExistentStaff()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testErrorHandlingForNonExistentStaff" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyItemSelection -->
+        <test-method signature="verifyQuantityEdit()[pri:7, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:58 IST" name="verifyQuantityEdit" finished-at="2024-09-18T16:30:59 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQuantityEdit -->
+        <test-method signature="verifyBudgetEdit()[pri:8, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifyBudgetEdit" finished-at="2024-09-18T16:30:59 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBudgetEdit -->
+        <test-method signature="verifyItemRemoval()[pri:9, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifyItemRemoval" finished-at="2024-09-18T16:30:59 IST" duration-ms="22" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr[2]/td/div/div[3]/a"}
   (Session info: chrome=128.0.6613.138)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr[2]/td/div/div[3]/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr[2]/td/div/div[3]/a"}
   (Session info: chrome=128.0.6613.138)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr[2]/td/div/div[3]/a}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -265,18 +297,20 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.removeSelectedItem(ProcurementInitiateFormPage.java:86)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyItemRemoval(ProcurementInitiateFormTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -298,30 +332,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testErrorHandlingForNonExistentStaff -->
-        <test-method signature="testPageLoad()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testPageLoad" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyItemRemoval -->
+        <test-method signature="verifyFileUpload()[pri:10, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifyFileUpload" finished-at="2024-09-18T16:30:59 IST" duration-ms="78" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[element not interactable
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -333,22 +363,22 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.uploadFile(ProcurementInitiateFormPage.java:90)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyFileUpload(ProcurementInitiateFormTest.java:95)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -367,33 +397,29 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPageLoad -->
-        <test-method signature="testSearchFunctionalityWithPartialNames()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testSearchFunctionalityWithPartialNames" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyFileUpload -->
+        <test-method signature="verifyRFPUpload()[pri:11, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifyRFPUpload" finished-at="2024-09-18T16:30:59 IST" duration-ms="72" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[element not interactable
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -405,22 +431,22 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.uploadRFP(ProcurementInitiateFormPage.java:94)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyRFPUpload(ProcurementInitiateFormTest.java:101)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -439,60 +465,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchFunctionalityWithPartialNames -->
-        <test-method signature="testSearchFunctionalityWithValidInput()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testSearchFunctionalityWithValidInput" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyRFPUpload -->
+        <test-method signature="verifyDateSelection()[pri:12, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifyDateSelection" finished-at="2024-09-18T16:30:59 IST" duration-ms="153" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
-  (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+              <![CDATA[Required date is not selected correctly expected [08/04/2024] but found [2024-08-04]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
-  (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+              <![CDATA[java.lang.AssertionError: Required date is not selected correctly expected [08/04/2024] but found [2024-08-04]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyDateSelection(ProcurementInitiateFormTest.java:108)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -511,33 +512,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchFunctionalityWithValidInput -->
-        <test-method signature="testStaffCardsDisplay()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testStaffCardsDisplay" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyDateSelection -->
+        <test-method signature="verifySelectedItems()[pri:13, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifySelectedItems" finished-at="2024-09-18T16:30:59 IST" duration-ms="17" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -553,18 +556,20 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.selectedItems(ProcurementInitiateFormPage.java:156)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifySelectedItems(ProcurementInitiateFormTest.java:113)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -583,33 +588,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testStaffCardsDisplay -->
-        <test-method signature="testUpdateButtonFunctionality()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="testUpdateButtonFunctionality" finished-at="2024-09-13T16:51:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifySelectedItems -->
+        <test-method signature="verifyItems()[pri:14, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifyItems" finished-at="2024-09-18T16:30:59 IST" duration-ms="18" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb0234075b5abd36b4682dc8f2fd643
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div/div/div[2]/form/div[1]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -625,18 +632,20 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.Optiomax.pageObjects.ProcurementStaffPage.login(ProcurementStaffPage.java:30)
-at com.Optiomax.testCases.ProcurementStaffTest.setUp(ProcurementStaffTest.java:20)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.selectedItems(ProcurementInitiateFormPage.java:156)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyItems(ProcurementInitiateFormTest.java:120)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -655,19 +664,91 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUpdateButtonFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1726226508752" status="SKIP">
+        </test-method> <!-- verifyItems -->
+        <test-method signature="verifyAddMultipleItems()[pri:15, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="verifyAddMultipleItems" finished-at="2024-09-18T16:30:59 IST" duration-ms="23" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression."}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'JANODYA-LAP', ip: '192.168.8.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Janodya\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7b92d2d7568b0218b9af3dc81df284
+*** Element info: {Using=xpath, value=}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.Optiomax.pageObjects.ProcurementInitiateFormPage.selectedItems(ProcurementInitiateFormPage.java:156)
+at com.Optiomax.testCases.ProcurementInitiateFormTest.verifyAddMultipleItems(ProcurementInitiateFormTest.java:127)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Optiomax.testCases.ProcurementStaffTest@61df66b6]" started-at="2024-09-13T16:51:48 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1726226508754" status="SKIP">
+        </test-method> <!-- verifyAddMultipleItems -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Optiomax.testCases.ProcurementInitiateFormTest@1ea9f6af]" started-at="2024-09-18T16:30:59 IST" name="teardown" finished-at="2024-09-18T16:30:59 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.Optiomax.testCases.ProcurementStaffTest -->
+      </class> <!-- com.Optiomax.testCases.ProcurementInitiateFormTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

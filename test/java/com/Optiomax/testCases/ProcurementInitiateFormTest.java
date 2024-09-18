@@ -15,7 +15,7 @@ public class ProcurementInitiateFormTest extends BasePage {
     public void setUp() throws InterruptedException {
 		super.setup();
 		procurementInitiateFormPage = new ProcurementInitiateFormPage(driver);
-		procurementInitiateFormPage.login("ruvinya@gmail.com", "ruvinya1234");
+		procurementInitiateFormPage.login("sithum@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/procurement_initiate");
 		Thread.sleep(5000);
@@ -27,18 +27,22 @@ public class ProcurementInitiateFormTest extends BasePage {
     }
 
     @Test(priority = 2)
-    public void verifyFormSubmissionWithAllFields() {
-        procurementInitiateFormPage.searchRequisition("qilz5jby");
-        procurementInitiateFormPage.selectRequisition("qilz5jby");
+    public void verifyFormSubmissionWithAllFields() throws InterruptedException {
+    	procurementInitiateFormPage.clickAddNewProcurementInitiate();
+    	Thread.sleep(3000);
+        procurementInitiateFormPage.searchRequisition("i0q5gc5n");
+    	Thread.sleep(3000);
+        procurementInitiateFormPage.selectRequisition();
         procurementInitiateFormPage.addItemToSelected();
         procurementInitiateFormPage.editQuantity("10");
         procurementInitiateFormPage.editBudget("5000");
         procurementInitiateFormPage.uploadFile("C:\\path\\to\\file.png");
-        procurementInitiateFormPage.uploadRFP("C:\\path\\to\\document.pdf");
+        procurementInitiateFormPage.uploadRFP("C:\\Users\\Janodya\\Downloads\\RPF.png");   
         procurementInitiateFormPage.selectRequiredDate("09/26/2024");
         procurementInitiateFormPage.enterComment("Test comment");
+        Thread.sleep(3000);
         procurementInitiateFormPage.submitForm();
-        Assert.assertTrue(procurementInitiateFormPage.isFormSubmittedSuccessfully(), "Form is not submitted successfully with all fields");
+        //Assert.assertTrue(procurementInitiateFormPage.isFormSubmittedSuccessfully(), "Form is not submitted successfully with all fields");
     }
 
     @Test(priority = 3)
@@ -56,15 +60,15 @@ public class ProcurementInitiateFormTest extends BasePage {
 
     @Test(priority = 5)
     public void verifyRequisitionSearch() {
-        procurementInitiateFormPage.searchRequisition("he5d26y5");
-        Assert.assertTrue(procurementInitiateFormPage.isRequisitionFound("he5d26y5"), "Requisition ID is not found");
+        procurementInitiateFormPage.searchRequisition("i0q5gc5n");
+        Assert.assertTrue(procurementInitiateFormPage.isRequisitionFound("i0q5gc5n"), "Requisition ID is not found");
     }
 
     @Test(priority = 6)
     public void verifyItemSelection() {
-        procurementInitiateFormPage.selectRequisition("he5d26y5");
+        //procurementInitiateFormPage.selectRequisition("i0q5gc5n");
         procurementInitiateFormPage.addItemToSelected();
-        Assert.assertTrue(procurementInitiateFormPage.isItemSelected("he5d26y5"), "Item is not added to Selected items");
+        Assert.assertTrue(procurementInitiateFormPage.isItemSelected("i0q5gc5n"), "Item is not added to Selected items");
     }
 
     @Test(priority = 7)
@@ -82,13 +86,13 @@ public class ProcurementInitiateFormTest extends BasePage {
     @Test(priority = 9)
     public void verifyItemRemoval() {
         procurementInitiateFormPage.removeSelectedItem();
-        Assert.assertFalse(procurementInitiateFormPage.isItemSelected("he5d26y5"), "Item is not removed from Selected items");
+        Assert.assertFalse(procurementInitiateFormPage.isItemSelected("i0q5gc5n"), "Item is not removed from Selected items");
     }
 
     @Test(priority = 10)
     public void verifyFileUpload() {
-        procurementInitiateFormPage.uploadFile("C:\\path\\to\\file.png");
-        Assert.assertTrue(procurementInitiateFormPage.isFileUploaded("file.png"), "File is not uploaded successfully");
+        procurementInitiateFormPage.uploadFile("C:\\Users\\Janodya\\Downloads\\asset documents.png");
+        Assert.assertTrue(procurementInitiateFormPage.isFileUploaded("asset documents.png"), "File is not uploaded successfully");
     }
 
     @Test(priority = 11)

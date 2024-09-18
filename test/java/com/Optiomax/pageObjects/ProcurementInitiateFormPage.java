@@ -14,20 +14,21 @@ public class ProcurementInitiateFormPage {
     private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 
+    private By addNewProcurementInitiate = By.xpath("//button[normalize-space()='Add new Procurement Initiate']");
     private By formHeader = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[1]/div/h3");
     private By procurementInitiateNumber = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[1]/div[1]/span");
     private By requisitionSearch = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[1]/div/input");
     private By assetRequests = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[1]/div[2]/div/div/input");
     private By selectedItems = By.xpath("");
-    private By quantity = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr[2]/td/div/div[2]/div[2]/div[2]/div[1]/input");
-    private By budget = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr[2]/td/div/div[2]/div[2]/div[2]/div[2]/input");
+    private By quantity = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr/td[6]/input");
+    private By budget = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr/td[7]/input");
     private By removeItem = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div/div/div[2]/div/div/table/tbody/tr[2]/td/div/div[3]/a");
     private By uploadFiles = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[3]/div[2]/label[2]");
     private By attachmentRFP = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[4]/div[1]/label[2]");
     private By requiredDate = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[5]/div/input");
     private By comment = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[4]/div[2]/textarea");
     private By submit = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[6]/button");
-
+ 
     public ProcurementInitiateFormPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -43,6 +44,10 @@ public class ProcurementInitiateFormPage {
     public boolean isFormDisplayed() {
         return driver.findElement(formHeader).isDisplayed();
     }
+    
+    public void clickAddNewProcurementInitiate() {
+    	driver.findElement(addNewProcurementInitiate).click();
+    }
 
     public String getProcurementInitiateNumber() {
         return driver.findElement(procurementInitiateNumber).getText();
@@ -52,9 +57,13 @@ public class ProcurementInitiateFormPage {
         driver.findElement(requisitionSearch).sendKeys(requisitionId);
     }
 
-    public void selectRequisition(String requisitionId) {
-        WebElement requisition = driver.findElement(By.xpath("//div[@class='assess-requests']//div[@class='request'][text()='" + requisitionId + "']"));
-        requisition.click();
+//    public void selectRequisition(String requisitionId) {
+//        WebElement requisition = driver.findElement(By.xpath("//div[@class='assess-requests']//div[@class='request'][text()='" + requisitionId + "']"));
+//        requisition.click();
+//    }
+    
+    public void selectRequisition() {
+    	driver.findElement(assetRequests).click();
     }
 
     public void addItemToSelected() {

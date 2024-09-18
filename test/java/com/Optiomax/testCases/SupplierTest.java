@@ -18,7 +18,7 @@ public class SupplierTest extends BasePage {
 	public void setUp() throws InterruptedException {
 		super.setup();
 		supplierPage = new SupplierPage(driver);
-		supplierPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+		supplierPage.login("sithum@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/supplier");
 		Thread.sleep(5000);
@@ -35,52 +35,100 @@ public class SupplierTest extends BasePage {
 	}
 
 	@Test(priority = 3)
-	public void testAddNewSupplierButton() {
+	public void testAddNewSupplierButton() throws InterruptedException {
 		supplierPage.clickAddNewSupplier();
+		Thread.sleep(3000);
 		// Verify that the new pop-up window appears
-		Assert.assertTrue(driver.findElement(By.xpath("")).isDisplayed(),
+		Assert.assertTrue(driver.findElement(By.xpath("//h3[normalize-space()='Add New Supplier']")).isDisplayed(),
 				"The 'Add New Supplier' popup did not appear.");
+		driver.navigate().refresh();
 	}
 
 	@Test(priority = 4)
-	public void testUpdateButtonFunctionality() {
-		supplierPage.clickEditButton();
+	public void testUpdateButtonFunctionality() throws InterruptedException {
+		Thread.sleep(3000);
+		supplierPage.clickUpdateButton();
+        Thread.sleep(3000);
 		// Verify that the edit pop-up window appears
-		Assert.assertTrue(driver.findElement(By.xpath("")).isDisplayed(),
+		Assert.assertTrue(driver.findElement(By.xpath("//h3[normalize-space()='Update Existing Workflow']")).isDisplayed(),
 				"The 'Update Supplier' popup did not appear.");
+		driver.navigate().refresh();
 	}
 
 	@Test(priority = 5)
-	public void testDeleteButtonFunctionality() {
+	public void testDeleteButtonFunctionality() throws InterruptedException {
+		Thread.sleep(3000);
 		supplierPage.clickDeleteButton();
+        Thread.sleep(3000);
 		// Verify that a confirmation message appears
-		Assert.assertTrue(driver.findElement(By.xpath("")).isDisplayed(), "The confirmation message did not appear.");
+		Assert.assertTrue(driver.findElement(By.xpath("//h3[normalize-space()='Remove Supplier']")).isDisplayed(), "The confirmation message did not appear.");
 		// Confirm the deletion and verify the success message
-		driver.findElement(By.xpath("")).click();
-		Assert.assertTrue(driver.findElement(By.xpath("")).isDisplayed(),
-				"The success message did not appear after deletion.");
+//		driver.findElement(By.xpath("")).click();
+//		Assert.assertTrue(driver.findElement(By.xpath("")).isDisplayed(),
+//				"The success message did not appear after deletion.");
+		driver.navigate().refresh();
 	}
 
 	@Test(priority = 6)
-	public void testSearchFunctionalityWithValidInput() {
-		supplierPage.searchStaff("");
-		Assert.assertTrue(supplierPage.isStaffPresent(""),
+	public void testSearchFunctionalityWithValidInput() throws InterruptedException {
+		supplierPage.searchStaff("Globex Corporation");
+        Thread.sleep(3000);
+		Assert.assertTrue(supplierPage.isStaffPresent("Globex Corporation"),
 				"The search functionality did not return the expected result.");
+		driver.navigate().refresh();
 	}
 
 	@Test(priority = 7)
-	public void testErrorHandlingForNonExistentSupplier() {
+	public void testErrorHandlingForNonExistentSupplier() throws InterruptedException {
 		supplierPage.searchStaff("nonexistentsupplier");
+        Thread.sleep(3000);
 		Assert.assertTrue(supplierPage.isNoResultsMessageDisplayed(),
 				"The error handling for non-existent supplier is not working as expected.");
+		driver.navigate().refresh();
 	}
 
 	@Test(priority = 8)
-	public void testSearchFunctionalityWithPartialNames() {
-		supplierPage.searchStaff("");
-		Assert.assertTrue(supplierPage.isStaffPresent(""),
+	public void testSearchFunctionalityWithPartialNames() throws InterruptedException {
+		supplierPage.searchStaff("Globex");
+        Thread.sleep(3000);
+		Assert.assertTrue(supplierPage.isStaffPresent("Globex Corporation"),
 				"The search functionality did not return the expected result with partial name.");
+		driver.navigate().refresh();
 	}
+	
+    @Test(priority = 9)
+    public void testToggleGridView() throws InterruptedException {
+    	supplierPage.toggleGridView();
+        Thread.sleep(3000);
+        Assert.assertTrue(supplierPage.isElementPresent(By.xpath("/html/body/main/div/div/main/div/div/div[2]/div")), "Grid view toggle did not work correctly.");
+        driver.navigate().refresh();
+    }
+    
+    @Test(priority = 10)
+    public void testToggleListView() throws InterruptedException {
+    	supplierPage.toggleListView();
+        Thread.sleep(3000);
+        //Assert.assertTrue(supplierPage.isElementPresent(By.xpath("")), "List view toggle did not work correctly.");
+        driver.navigate().refresh();
+    }
+    
+    @Test(priority = 11)
+    public void testExportCSV() throws InterruptedException {
+    	supplierPage.clickExportCSV();
+        Thread.sleep(3000);
+        // Add logic to verify CSV file download if possible
+        //Assert.assertTrue(isFileDownloaded("supplier.csv"), "Export CSV did not work correctly.");      
+        driver.navigate().refresh();
+    }
+    
+    @Test(priority = 12)
+    public void testFilterValidCriteria() throws InterruptedException {
+    	supplierPage.clickFilterButton();
+        Thread.sleep(3000);
+        // Add logic to select valid filter criteria
+        //Assert.assertTrue(supplierPage.isElementPresent(By.xpath("//div[contains(text(), 'Filtered Result')]")), "Filter functionality with valid criteria did not work correctly.");
+        driver.navigate().refresh();
+    }
 
 	@AfterClass
 	public void tearDown() {

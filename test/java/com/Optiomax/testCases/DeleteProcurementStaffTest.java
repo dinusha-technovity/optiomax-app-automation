@@ -20,9 +20,9 @@ public class DeleteProcurementStaffTest extends BasePage {
     	
     	deleteProcurementStaffPage = new DeleteProcurementStaffPage(driver);
     	deleteProcurementStaffPage = PageFactory.initElements(driver,DeleteProcurementStaffPage.class);
-    	deleteProcurementStaffPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+    	deleteProcurementStaffPage.login("sithum@gmail.com", "chamod1234");
     	Thread.sleep(5000);
-    	driver.get("http://app.optiomax.com/dashboard/");
+    	driver.get("http://app.optiomax.com/dashboard/staff");
     	Thread.sleep(5000);
     }
  

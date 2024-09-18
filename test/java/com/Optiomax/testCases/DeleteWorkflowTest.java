@@ -18,7 +18,7 @@ public class DeleteWorkflowTest extends BasePage {
     public void setUpTest() throws InterruptedException {
         deleteWorkflowPage = new DeleteWorkflowPage(driver);
         deleteWorkflowPage = PageFactory.initElements(driver, DeleteWorkflowPage.class);
-        deleteWorkflowPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+        deleteWorkflowPage.login("sithum@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/workflow");
         Thread.sleep(5000);
