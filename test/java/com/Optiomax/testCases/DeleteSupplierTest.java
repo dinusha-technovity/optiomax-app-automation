@@ -18,16 +18,16 @@ public class DeleteSupplierTest extends BasePage {
     public void setUpTest() throws InterruptedException {
         deleteSupplierPage = new DeleteSupplierPage(driver);
         deleteSupplierPage = PageFactory.initElements(driver, DeleteSupplierPage.class);
-        deleteSupplierPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+        deleteSupplierPage.login("sithum@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/supplier");
         Thread.sleep(5000);
     }
  
-    @Test(priority = 1)
+    @Test(priority = 6)
     public void deleteSupplierWithCorrectName() {
         deleteSupplierPage.clickDeleteIcon();
-        deleteSupplierPage.enterSupplierName("");
+        deleteSupplierPage.enterSupplierName("John Lum");
         deleteSupplierPage.clickDeleteButton();
         
         // Add assertions to verify supplier is deleted
@@ -37,10 +37,10 @@ public class DeleteSupplierTest extends BasePage {
         driver.navigate().refresh();
     }    
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void deleteSupplierWithUnmatchedName() {
         deleteSupplierPage.clickDeleteIcon();
-        deleteSupplierPage.enterSupplierName("");
+        deleteSupplierPage.enterSupplierName("Unmatched Supplier Name");
         deleteSupplierPage.clickDeleteButton();
         
         // Add assertions to verify supplier is not deleted
@@ -50,7 +50,7 @@ public class DeleteSupplierTest extends BasePage {
         deleteSupplierPage.clickCloseButton();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void deleteSupplierWithoutName() throws InterruptedException {
     	
     	deleteSupplierPage.clickDeleteIcon();
@@ -64,7 +64,7 @@ public class DeleteSupplierTest extends BasePage {
         deleteSupplierPage.clickCloseButton();     
     }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void deleteSupplierAndCancel() throws InterruptedException {
     	deleteSupplierPage.clickDeleteIcon();
     	
@@ -76,7 +76,7 @@ public class DeleteSupplierTest extends BasePage {
 
     } 
 
-    @Test(priority = 5)
+    @Test(priority = 4)
     public void closeDialogAfterCorrectName() throws InterruptedException {
 
     	deleteSupplierPage.clickDeleteIcon();
@@ -90,7 +90,7 @@ public class DeleteSupplierTest extends BasePage {
         deleteSupplierPage.clickCloseButton();
     }
 
-    @Test(priority = 6)
+    @Test(priority = 5)
     public void closeDialogAfterIncorrectName() throws InterruptedException {
         deleteSupplierPage.clickDeleteIcon();
         deleteSupplierPage.enterSupplierName("");

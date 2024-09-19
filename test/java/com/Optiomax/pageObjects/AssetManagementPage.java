@@ -30,7 +30,7 @@ public class AssetManagementPage {
     private By gridView = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[3]/div[2]/div/div[2]/button[1]");
     private By next = By.xpath("/html/body/main/div/div/main/div/div/div[3]/nav/ul/li[6]/button");
     private By previous = By.xpath("/html/body/main/div/div/main/div/div/div[3]/nav/ul/li[1]/button");
-    
+     
     public void login(String email, String password) {
         driver.findElement(emailField).sendKeys(email);
         driver.findElement(passwordField).sendKeys(password);

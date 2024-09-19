@@ -23,7 +23,7 @@ public class AssetManagementTest extends BasePage {
 		Thread.sleep(5000);
 		driver.navigate().refresh();
 	}
-
+ 
 	@Test(priority = 1)
 	public void testPageLoad() throws InterruptedException {
 		Thread.sleep(5000);

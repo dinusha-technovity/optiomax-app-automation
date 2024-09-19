@@ -2,7 +2,9 @@ package com.Optiomax.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class AddNewSupplierCompanyPage extends BasePage {
 	private WebDriver driver;
@@ -16,29 +18,29 @@ public class AddNewSupplierCompanyPage extends BasePage {
 	private By rememberMeCheckbox = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/div[3]/div/input");
 	private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 
-	private By addNewSupplierButton = By.xpath("");
-	private By companyToggle = By.xpath("");
-	private By nameField = By.xpath("");
-	private By addressField = By.xpath("");
-	private By assetClassDropdown = By.xpath("");
-	private By supplierRating = By.xpath("");
-	private By contactNoField = By.xpath("");
-	private By addContactNo = By.xpath("");
-	private By businessNameField = By.xpath("");
-	private By businessRegistrationField = By.xpath("");
-	private By primaryEmailField = By.xpath("");
-	private By secondaryEmailField = By.xpath("");
-	private By brAttachmentUpload = By.xpath("");
-	private By websiteField = By.xpath("");
-	private By telephoneField = By.xpath("");
-	private By mobileField = By.xpath("");
-	private By faxField = By.xpath("");
-	private By cityField = By.xpath("");
+	private By addNewSupplierButton = By.xpath("//button[normalize-space()='Add New Supplier']");
+	private By companyToggle = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[1]/div/div/div/div/div/div/label[1]");
+	private By nameField = By.xpath("//input[@id='name']");
+	private By addressField = By.xpath("//input[@id='address']");
+	private By assetClassDropdown = By.xpath("//div[@class='ant-select-selection-overflow']");
+	private By supplierRating = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div[3]/div[2]/div/div/div/div/div/ul/li[4]/div/div[1]/span");
+	private By contactNoField = By.xpath("//input[@id='contact_no 1']");
+	private By addContactNo = By.xpath("//span[@aria-label='plus']");
+	private By businessNameField = By.xpath("//input[@id='business_name']");
+	private By businessRegistrationField = By.xpath("//input[@id='business_registration']");
+	private By primaryEmailField = By.xpath("//input[@id='primary_email']");
+	private By secondaryEmailField = By.xpath("//input[@id='secondary_email']");
+	private By brAttachmentUpload = By.xpath("//span[@aria-label='upload']");
+	private By websiteField = By.xpath("//input[@id='website']");
+	private By telephoneField = By.xpath("//input[@id='tel_no']");
+	private By mobileField = By.xpath("//input[@id='mobile']");
+	private By faxField = By.xpath("//input[@id='fax']");
+	private By cityField = By.xpath("//input[@id='city']");
 	private By latitudeField = By.xpath("");
 	private By longitudeField = By.xpath("");
-	private By loginUsername = By.xpath("");
-	private By loginemail = By.xpath("");
-	private By submitButton = By.xpath("");
+	private By loginUsername = By.xpath("//input[@id='supplier_username']");
+	private By loginemail = By.xpath("//input[@id='supplier_email']");
+	private By submitButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[5]/div/div/div/div/button");
 
 	public void login(String email, String password) {
 		driver.findElement(emailField).sendKeys(email);
@@ -139,5 +141,14 @@ public class AddNewSupplierCompanyPage extends BasePage {
 	public void clickSubmitButton() {
 		driver.findElement(submitButton).click();
 	}
+	
+	public void clickUsername() {
+		driver.findElement(loginUsername).click();
+	}
+	
+    public void scrollToElementAndClick() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
+        ((WebElement) submitButton).click();
+    }
 
 }

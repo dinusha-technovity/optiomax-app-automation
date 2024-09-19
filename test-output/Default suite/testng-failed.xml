@@ -3,23 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Optiomax.testCases.ProcurementInitiateFormTest">
+      <class name="com.Optiomax.testCases.AddNewSupplierIndividualTest">
         <methods>
-          <include name="verifyRequisitionSearch"/>
-          <include name="verifyAddMultipleItems"/>
-          <include name="verifyFormSubmissionWithoutMandatoryFields"/>
-          <include name="verifyItems"/>
-          <include name="verifyRFPUpload"/>
-          <include name="verifyFileUpload"/>
-          <include name="verifySelectedItems"/>
-          <include name="setUp"/>
-          <include name="verifyItemRemoval"/>
-          <include name="verifyItemSelection"/>
+          <include name="testMissingRequiredFields"/>
+          <include name="setupMethod"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="verifyDateSelection"/>
         </methods>
-      </class> <!-- com.Optiomax.testCases.ProcurementInitiateFormTest -->
+      </class> <!-- com.Optiomax.testCases.AddNewSupplierIndividualTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
