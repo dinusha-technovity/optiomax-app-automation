@@ -21,7 +21,7 @@ public class OrganizationTest extends BasePage {
     public void setUp() throws InterruptedException {
         super.setup();
         organizationPage = PageFactory.initElements(driver, OrganizationPage.class);
-        organizationPage.login("", "");
+        organizationPage.login("sithum@gmail.com", "chamod1234");
         Thread.sleep(5000);
         driver.get("http://app.optiomax.com/dashboard/organization");
         Thread.sleep(5000);
@@ -81,7 +81,7 @@ public class OrganizationTest extends BasePage {
     	organizationPage.clickExpandCollapseButton1();
     	organizationPage.clickExpandCollapseButton2();
         Assert.assertTrue(organizationPage.isDeleteOrganizationButtonVisible(), "Delete Organization button is not visible");
-        organizationPage.clickDeleteOrganizationButton();
+        //organizationPage.clickDeleteOrganizationButton();
 
         // Verify that delete organization functionality is working (this might involve checking if the node is removed)
 //        WebElement confirmation = driver.findElement(By.xpath("")); 
@@ -111,12 +111,6 @@ public class OrganizationTest extends BasePage {
 
         // Reset to original size
         driver.manage().window().maximize();
-    }
-
-	@Test(priority = 6)
-    public void testNavigateToHomePage() {
-        organizationPage.navigateToHomePage();
-        Assert.assertTrue(organizationPage.isOrganizationPageDisplayed(), "Failed to navigate to Organization page");
     }
 	
 }

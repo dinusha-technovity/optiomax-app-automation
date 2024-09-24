@@ -39,10 +39,10 @@ public class AddUserRolesTest extends BasePage {
         addUserRolesPage.enterRoleName("Test Role");
         addUserRolesPage.enterRoleDescription("Test Description");
         addUserRolesPage.clickCreateButton();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         //Assert.assertTrue(addUserRolesPage.isRolePresent("Test Role"), "New role was not added successfully");
         addUserRolesPage.clickCloseButton();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     @Test(priority = 3)

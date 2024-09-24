@@ -20,7 +20,6 @@ public class UpdateUserRolesPage extends BasePage {
     private By roleDescriptionInput = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/form/div/div[2]/textarea");
     private By saveButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/form/button");
     private By roleNameError = By.xpath("");
-   
        
     public void login(String email, String password) {
         driver.findElement(emailField).sendKeys(email);
@@ -31,7 +30,6 @@ public class UpdateUserRolesPage extends BasePage {
 
     public void clickUpdateButton(String roleName) {
     	driver.findElement(updateButton).click();
-    	//driver.findElement(By.xpath("//h5[text()='" + roleName + "']/../..//button[@title='Edit']")).click();
     }
 
     public void setRoleName(String roleName) {

@@ -3,14 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Optiomax.testCases.AddNewSupplierIndividualTest">
+      <class name="com.Optiomax.testCases.AddProcurementStaffTest">
         <methods>
-          <include name="testMissingRequiredFields"/>
-          <include name="setupMethod"/>
+          <include name="testErrorHandlingWithoutSelectingUser"/>
+          <include name="testErrorHandlingForDuplicateUserAssignment"/>
+          <include name="tearDown"/>
+          <include name="testClosePopupWithoutAddingMember"/>
+          <include name="testAddNewMemberWithOneAssetClass"/>
+          <include name="addNewMemberWithMultipleAssetClasses"/>
+          <include name="verifyBothFieldsLeftBlanks"/>
+          <include name="testErrorHandlingWithoutSelectingAssetClass"/>
+          <include name="setUp"/>
+          <include name="testAddNewMemberSuccessfully"/>
+          <include name="testErrorHandlingWithoutSelectingUserAndAssetClass"/>
           <include name="setup"/>
+          <include name="testErrorHandlingWithDuplicateAssetClasses"/>
+          <include name="testErrorMessage"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.Optiomax.testCases.AddNewSupplierIndividualTest -->
+      </class> <!-- com.Optiomax.testCases.AddProcurementStaffTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

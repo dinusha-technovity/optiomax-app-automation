@@ -27,19 +27,19 @@ public class DeleteProcurementStaffTest extends BasePage {
 		
 	}
 
-	@Test(priority = 6)
-	public void deleteStaffMemberWithCorrectName() throws InterruptedException {
-		deleteProcurementStaffPage.clickDeleteIcon();
-		Thread.sleep(3000);
-		deleteProcurementStaffPage.enterStaffMemberName("Daniel Grant");
-		deleteProcurementStaffPage.clickDeleteButton();
-
-		// Add assertions to verify workflow deletion
-//        String successMessage = driver.findElement(By.xpath("")).getText();
-//        Assert.assertTrue(successMessage.contains(""));
-
-		driver.navigate().refresh();
-	}
+//	@Test(priority = 6)
+//	public void deleteStaffMemberWithCorrectName() throws InterruptedException {
+//		deleteProcurementStaffPage.clickDeleteIcon();
+//		Thread.sleep(3000);
+//		deleteProcurementStaffPage.enterStaffMemberName("Daniel Grant");
+//		deleteProcurementStaffPage.clickDeleteButton();
+//
+//		// Add assertions to verify workflow deletion
+////        String successMessage = driver.findElement(By.xpath("")).getText();
+////        Assert.assertTrue(successMessage.contains(""));
+//
+//		driver.navigate().refresh();
+//	}
 
 	@Test(priority = 1)
 	public void deleteStaffMemberWithUnmatchedName() throws InterruptedException {

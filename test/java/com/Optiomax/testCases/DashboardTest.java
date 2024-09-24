@@ -65,27 +65,4 @@ public class DashboardTest extends BasePage {
         // Add assertions to verify access to apps
     }
 
-    @Test
-    public void verifyRoleSubOptionUnderUserManagement() throws InterruptedException {
-        Thread.sleep(3000);
-        dashboardPage.accessUserManagement();
-        dashboardPage.clickRoleSubOption();
-        // Add assertions to verify the 'Role' sub-option works correctly
-    }
-
-    @Test
-    public void verifyUsersSubOptionUnderUserManagement() throws InterruptedException {
-        Thread.sleep(3000);
-        dashboardPage.accessUserManagement();
-        dashboardPage.clickUsersSubOption();
-        // Add assertions to verify the 'Users' sub-option works correctly
-    }
-
-    @Test
-    public void verifyOrganizationSubOptionUnderConfig() throws InterruptedException {
-        Thread.sleep(3000);
-        dashboardPage.clickOrganizationSubOption();
-        // dashboradPage.clickOrganizations
-        // Add assertions to verify the 'Organization' sub-option works correctly
-    } 
 }

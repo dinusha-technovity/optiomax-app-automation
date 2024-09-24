@@ -46,7 +46,7 @@ public class UpdateAssetManagementPage {
     private By assetsRelatedDocument = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/form/div[2]/div[1]/label[2]");
     private By assetPurchaseDocument = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/form/div[3]/div[3]/label[2]");
     private By isuranceRelatedDocument = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/form/div[4]/div[4]/label[2]");
-    private By updateBtn = By.xpath("");
+    private By updateBtn = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/div[7]/a");
     
     private By assetTypeOption1 = By.xpath("//label[normalize-space()='Tangible assets']");
     private By assetTypeOption2 = By.xpath("//label[normalize-space()='Fixed assets']");
@@ -215,6 +215,10 @@ public class UpdateAssetManagementPage {
     
     public void clickSpace() {
     	driver.findElement(space).click();
+    }
+    
+    public void clickUpdateBtn() {
+    	driver.findElement(updateBtn).click();
     }
        
 }

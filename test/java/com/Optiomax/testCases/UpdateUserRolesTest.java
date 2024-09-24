@@ -19,7 +19,7 @@ public class UpdateUserRolesTest extends BasePage {
         driver = new ChromeDriver();
         updateUserRolesPage = new UpdateUserRolesPage(driver);
 		updateUserRolesPage = PageFactory.initElements(driver, UpdateUserRolesPage.class);
-		updateUserRolesPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+		updateUserRolesPage.login("sithum@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/Roles"); 
 		Thread.sleep(5000); 

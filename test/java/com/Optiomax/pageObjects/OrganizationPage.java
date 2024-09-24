@@ -18,9 +18,7 @@ public class OrganizationPage extends BasePage {
     private By expandCollapseButton1 = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div/ul/li/ul/li[4]/div/div[4]/button/div");
     private By expandCollapseButton2 = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div/ul/li/ul/li[4]/ul/li/div/div[4]/button/div");
     private By deleteOrganizationButton = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div/ul/li/ul/li[4]/ul/li/ul/li/div/div[3]/button[3]"); 
-    private By homePageLink = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[1]/nav/ol/li[1]/a");
 
-    
     public OrganizationPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -66,10 +64,6 @@ public class OrganizationPage extends BasePage {
 
     public void clickDeleteOrganizationButton() {
         driver.findElement(deleteOrganizationButton).click();
-    }
-
-    public void navigateToHomePage() {
-        driver.findElement(homePageLink).click();
     }
 
     public boolean isOrganizationPageDisplayed() {

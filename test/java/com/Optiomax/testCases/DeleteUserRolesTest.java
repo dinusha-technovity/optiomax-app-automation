@@ -1,6 +1,7 @@
 package com.Optiomax.testCases;
 
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -13,88 +14,94 @@ public class DeleteUserRolesTest extends BasePage {
     @BeforeClass
     public void setUp() throws InterruptedException {
 		deleteUserRolesPage = new DeleteUserRolesPage(driver);
-		deleteUserRolesPage = PageFactory.initElements(driver, DeleteUserRolesPage.class);
-		deleteUserRolesPage.login("chamoddushyantha2017@gmail.com", "chamod1234");
+//		deleteUserRolesPage = PageFactory.initElements(driver, DeleteUserRolesPage.class);
+		deleteUserRolesPage.login("sithum@gmail.com", "chamod1234");
 		Thread.sleep(5000);
 		driver.get("http://app.optiomax.com/dashboard/Roles"); 
 		Thread.sleep(5000);  
     }
   
     
-    @Test(priority = 1)
-    public void verifySuccessfulDeletion() {
+    @Test(priority = 6)
+    public void verifySuccessfulDeletion() throws InterruptedException {
     	deleteUserRolesPage.clickDeleteIcon();
-        deleteUserRolesPage.enterText("multi admin");
+    	Thread.sleep(3000);
+        deleteUserRolesPage.enterText("End User");
         deleteUserRolesPage.clickDeleteButton();
+    	Thread.sleep(3000);
         
-//        Alert alert = driver.switchTo().alert();
-//        Assert.assertEquals(alert.getText(), "Successfully deleted");
-//        alert.accept();
+        // Add assertions to verify asset deletion       
+//      String successMessage = driver.findElement(By.xpath("")).getText();
+//      Assert.assertTrue(successMessage.contains(""));
+
+    }
+
+    @Test(priority = 1)
+    public void verifyDeletionFailureWithIncorrectInput() throws InterruptedException {
+    	deleteUserRolesPage.clickDeleteIcon();
+    	Thread.sleep(3000);
+        deleteUserRolesPage.enterText("Incorrect Role Name");
+        deleteUserRolesPage.clickDeleteButton();
+
+        // Add assertions to verify workflow is not deleted
+        String errorMessage = driver.findElement(By.xpath("//span[@class='block sm:inline']")).getText(); 
+        Assert.assertTrue(errorMessage.contains("Input does not match the name of the Role Name"));
         
-        driver.navigate().refresh();
+        deleteUserRolesPage.clickCloseButton();
     }
 
     @Test(priority = 2)
-    public void verifyDeletionFailureWithIncorrectInput() {
+    public void verifyDeletionFailureWithNoInput() throws InterruptedException {
     	deleteUserRolesPage.clickDeleteIcon();
-        deleteUserRolesPage.enterText("incorrect input");
-        deleteUserRolesPage.clickDeleteButton();
-        
-        // Verify deletion failure
-//        Alert alert = driver.switchTo().alert();
-//        Assert.assertEquals(alert.getText(), "Deletion failed");
-//        alert.accept();
-        
-        driver.navigate().refresh();
-    }
-
-    @Test(priority = 3)
-    public void verifyDeletionFailureWithNoInput() {
-    	deleteUserRolesPage.clickDeleteIcon();
+    	Thread.sleep(3000);
         deleteUserRolesPage.enterText("");
         deleteUserRolesPage.clickDeleteButton();
         
-        // Verify deletion failure
-//        Alert alert = driver.switchTo().alert();
-//        Assert.assertEquals(alert.getText(), "Deletion failed");
-//        alert.accept();
+        // Add assertions to verify error or workflow is not deleted
+        String errorMessage = driver.findElement(By.xpath("//span[@class='block sm:inline']")).getText(); 
+        Assert.assertTrue(errorMessage.contains("Input does not match the name of the Role Name"));
+        
+        deleteUserRolesPage.clickCloseButton();
         
     }
     
-    @Test(priority = 4)
-    public void verifyCloseButtonFunctionality() {
+    @Test(priority = 3)
+    public void verifyCloseButtonFunctionality() throws InterruptedException {
     	deleteUserRolesPage.clickDeleteIcon();
+    	Thread.sleep(3000);
+    	
+        // Add assertions to verify workflow is not deleted
+//      boolean isPopupDisplayed = driver.findElement(By.xpath("")).isDisplayed();
+//      Assert.assertFalse(isPopupDisplayed);
+    	
         deleteUserRolesPage.clickCloseButton();
         
-        // Verify the popup is closed
-        //Assert.assertFalse(deleteUserRolesPage.isPopupPresent());
+    }
+
+    @Test(priority = 4)
+    public void verifyCloseAfterCorrectInput() throws InterruptedException {
+    	deleteUserRolesPage.clickDeleteIcon();
+    	Thread.sleep(3000);
+        deleteUserRolesPage.enterText("End User");
+        deleteUserRolesPage.clickCloseButton();
+        
+        // Add assertions to verify dialog behavior
+//      boolean isPopupDisplayed = driver.findElement(By.xpath("")).isDisplayed(); 
+//      Assert.assertFalse(isPopupDisplayed); 
         
     }
 
     @Test(priority = 5)
-    public void verifyCloseAfterCorrectInput() {
-        deleteUserRolesPage.enterText("multi admin");
+    public void verifyCloseAfterIncorrectInput() throws InterruptedException {
+    	deleteUserRolesPage.clickDeleteIcon();
+    	Thread.sleep(3000);
+        deleteUserRolesPage.enterText("Incorrect User Role Name");
         deleteUserRolesPage.clickCloseButton();
         
-        // Verify the popup is closed
-//        Assert.assertFalse(deleteUserRolesPage.isPopupPresent());
+        // Add assertions to verify dialog behavior
+//      boolean isPopupDisplayed = driver.findElement(By.xpath("")).isDisplayed(); 
+//      Assert.assertFalse(isPopupDisplayed); 
         
-    }
-
-    @Test(priority = 6)
-    public void verifyCloseAfterIncorrectInput() {
-        deleteUserRolesPage.enterText("incorrect input");
-        deleteUserRolesPage.clickCloseButton();
-        
-        // Verify the popup is closed
-//        Assert.assertFalse(deleteUserRolesPage.isPopupPresent());         
-    }
-    
-    @Test(priority = 7)
-    public void verifyCloseAfter() {
-    	deleteUserRolesPage.enterText("incorrect input");
-    	deleteUserRolesPage.enterText("");
-    	deleteUserRolesPage.clickCloseButton();
     }
     
 }

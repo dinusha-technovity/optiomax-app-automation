@@ -12,10 +12,10 @@ public class DeleteWorkflowPage {
     private By signInButton = By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/form/button");
 
     // Locators for the elements
-    By deleteIcon = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[2]/div[2]/div/a[2]"); 
-    By workflowNameInput = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[3]/form/div/div/input"); 
-    By deleteButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[3]/form/button"); 
-    By closeButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[1]/button");
+    By deleteIcon = By.xpath("/html/body/main/div/div/main/div/div/div[2]/div/div[3]/div[2]/div/a[2]"); 
+    By workflowNameInput = By.xpath("//input[@id='name']"); 
+    By deleteButton = By.xpath("//button[normalize-space()='Delete']"); 
+    By closeButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/a");
   
     public DeleteWorkflowPage(WebDriver driver) {
         this.driver = driver;
