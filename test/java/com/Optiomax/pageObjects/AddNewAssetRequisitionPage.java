@@ -50,8 +50,8 @@ public class AddNewAssetRequisitionPage {
     private By addItemButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[8]/a");
     private By saveButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[3]/button[1]");
     private By submitButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[3]/button[2]");
-    //private By saveChanges = By.xpath("");
-    //private By confirmationMessage = By.xpath("");
+    private By saveChange = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[9]/a");
+    private By confirmationMessage = By.xpath("");
     private By selectOrganization = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[3]/div[4]/div/div/div/div/div/div/div/ul/li/div/div/input");
     private By selectSupplier = By.xpath("(//input[@id='checkbox-item-11'])[1]");
     private By spaceClick = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[3]/div[5]/label");
@@ -224,29 +224,29 @@ public class AddNewAssetRequisitionPage {
     	driver.findElement(closeAssetRequistionForm).click();
     }
     
-//    public void saveChanges() {
-//    	driver.findElement(saveChanges).click();
-//    }
-//
-//    public String getConfirmationMessage() {
-//        return driver.findElement(confirmationMessage).getText();
-//    }
+    public void saveChanges() {
+    	driver.findElement(saveChange).click();
+    }
+
+    public String getConfirmationMessage() {
+        return driver.findElement(confirmationMessage).getText();
+    }
 
     public WebElement getTopItem() {
-        return driver.findElement(By.cssSelector(""));
+        return driver.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[1]"));
     }
 
     public void updateTopItem(String newName) {
-        WebElement updateIcon = driver.findElement(By.cssSelector(""));
+        WebElement updateIcon = driver.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[1]/table/tbody/tr/td[8]/div/a[1]"));
         updateIcon.click();
-        WebElement itemNameField = driver.findElement(By.cssSelector(""));
+        WebElement itemNameField = driver.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[2]/div[1]/input"));
         itemNameField.clear();
         itemNameField.sendKeys(newName);
-        driver.findElement(By.cssSelector("")).click();
+        driver.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[9]/a")).click();
     }
 
     public void deleteTopItem() {
-        WebElement deleteIcon = driver.findElement(By.cssSelector(""));
+        WebElement deleteIcon = driver.findElement(By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/form/div[2]/div/div[1]/table/tbody/tr[2]/td[8]/div/a[2]"));
         deleteIcon.click();
     }
     

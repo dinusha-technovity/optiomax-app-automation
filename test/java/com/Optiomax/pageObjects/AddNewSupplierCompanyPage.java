@@ -36,8 +36,8 @@ public class AddNewSupplierCompanyPage extends BasePage {
 	private By mobileField = By.xpath("//input[@id='mobile']");
 	private By faxField = By.xpath("//input[@id='fax']");
 	private By cityField = By.xpath("//input[@id='city']");
-	private By latitudeField = By.xpath("");
-	private By longitudeField = By.xpath("");
+	private By latitudeField = By.xpath("");   // Add Latitude 
+	private By longitudeField = By.xpath("");  // Add Longitude
 	private By loginUsername = By.xpath("//input[@id='supplier_username']");
 	private By loginemail = By.xpath("//input[@id='supplier_email']");
 	private By submitButton = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[5]/div/div/div/div/button");

@@ -2,7 +2,6 @@ package com.Optiomax.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class AddNewSupplierIndividualPage extends BasePage {
 
@@ -22,6 +21,8 @@ public class AddNewSupplierIndividualPage extends BasePage {
 	//private By assetClassDropdown = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div[3]/div[1]/div/div/div/div/div/div/div/div");							
 	private By clickAssetClass = By.xpath("//div[@class='ant-select-selector']");
 	private By selectAssetClass = By.xpath("//div[contains(text(),'Tangible assets')]");
+	private By clickAssetClass2 = By.xpath("");
+	private By selectAssetClass2 = By.xpath("");
 	private By supplierRating = By.xpath("/html/body/main/div/div/main/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div[3]/form/div[2]/div[3]/div[2]/div/div/div/div/div/ul/li[2]/div/div[2]/span");
 	private By contactNoField = By.xpath("//input[@id='contact_no 1']");
 	private By addContactNo = By.xpath("//span[@aria-label='plus']//*[name()='svg']");
@@ -73,6 +74,14 @@ public class AddNewSupplierIndividualPage extends BasePage {
     
     public void selectAssetClasses() {
     	driver.findElement(selectAssetClass).click();
+    }
+    
+    public void clickNewAssetClasses() {
+    	driver.findElement(clickAssetClass2).click();
+    }
+    
+    public void selectNewAssetClasses() {
+    	driver.findElement(selectAssetClass2).click();
     }
 
 	public void addSupplierRatings() {

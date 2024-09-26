@@ -43,13 +43,19 @@ public class ProcurementInitiateFormTest extends BasePage {
         Thread.sleep(3000);
         procurementInitiateFormPage.submitForm();
         //Assert.assertTrue(procurementInitiateFormPage.isFormSubmittedSuccessfully(), "Form is not submitted successfully with all fields");
+        
+        driver.navigate().refresh();
+        Thread.sleep(3000);
     }
 
     @Test(priority = 3)
-    public void verifyFormSubmissionWithoutMandatoryFields() {
+    public void verifyFormSubmissionWithoutMandatoryFields() throws InterruptedException {
         procurementInitiateFormPage.clearMandatoryFields();
         procurementInitiateFormPage.submitForm();
         Assert.assertFalse(procurementInitiateFormPage.isFormSubmittedSuccessfully(), "Form should not be submitted without mandatory fields");
+        
+        driver.navigate().refresh();
+        Thread.sleep(3000);
     }
 
     @Test(priority = 4)
@@ -59,8 +65,9 @@ public class ProcurementInitiateFormTest extends BasePage {
     }
 
     @Test(priority = 5)
-    public void verifyRequisitionSearch() {
+    public void verifyRequisitionSearch() throws InterruptedException {
         procurementInitiateFormPage.searchRequisition("i0q5gc5n");
+        Thread.sleep(3000);
         Assert.assertTrue(procurementInitiateFormPage.isRequisitionFound("i0q5gc5n"), "Requisition ID is not found");
     }
 
@@ -72,26 +79,30 @@ public class ProcurementInitiateFormTest extends BasePage {
     }
 
     @Test(priority = 7)
-    public void verifyQuantityEdit() {
+    public void verifyQuantityEdit() throws InterruptedException {
     	procurementInitiateFormPage.editQuantity("10");
+    	Thread.sleep(3000);
         Assert.assertEquals(procurementInitiateFormPage.getQuantity(), "10", "Quantity is not updated correctly");
     }
 
     @Test(priority = 8)
-    public void verifyBudgetEdit() {
+    public void verifyBudgetEdit() throws InterruptedException {
         procurementInitiateFormPage.editBudget("5000");
+        Thread.sleep(0);
         Assert.assertEquals(procurementInitiateFormPage.getBudget(), "5000", "Budget is not updated correctly");
     }
 
     @Test(priority = 9)
-    public void verifyItemRemoval() {
+    public void verifyItemRemoval() throws InterruptedException {
         procurementInitiateFormPage.removeSelectedItem();
+        Thread.sleep(3000);
         Assert.assertFalse(procurementInitiateFormPage.isItemSelected("i0q5gc5n"), "Item is not removed from Selected items");
     }
 
     @Test(priority = 10)
-    public void verifyFileUpload() {
+    public void verifyFileUpload() throws InterruptedException {
         procurementInitiateFormPage.uploadFile("C:\\Users\\Janodya\\Downloads\\asset documents.png");
+        Thread.sleep(3000);
         Assert.assertTrue(procurementInitiateFormPage.isFileUploaded("asset documents.png"), "File is not uploaded successfully");
     }
 
@@ -108,24 +119,27 @@ public class ProcurementInitiateFormTest extends BasePage {
     }
     
     @Test(priority = 13)
-    public void verifySelectedItems() {
+    public void verifySelectedItems() throws InterruptedException {
     	procurementInitiateFormPage.selectedItems();
     	procurementInitiateFormPage.clickSubmit();
+    	Thread.sleep(3000);
     	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Item is not selected correctly.");
     }
     
     @Test(priority = 14)
-    public void verifyItems() {
+    public void verifyItems() throws InterruptedException {
     	procurementInitiateFormPage.selectedItems();
     	procurementInitiateFormPage.clickSubmit();
+    	Thread.sleep(3000);
     	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Items are not selected correctly.");
     }
     
     @Test(priority = 15)
-    public void verifyAddMultipleItems() {
+    public void verifyAddMultipleItems() throws InterruptedException {
     	procurementInitiateFormPage.selectedItems();
     	procurementInitiateFormPage.selectedItems();
     	procurementInitiateFormPage.clickSubmit();
+    	Thread.sleep(3000);
     	Assert.assertEquals(procurementInitiateFormPage.isItemSelected(""), "Multiple items are not selected.");
     }
    

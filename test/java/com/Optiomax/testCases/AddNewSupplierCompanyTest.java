@@ -23,48 +23,51 @@ public class AddNewSupplierCompanyTest extends BasePage {
 		Thread.sleep(5000);
 	}
 
-//	@Test(priority = 1)
-//	public void testFormSubmissionWithValidData() {
-//		addNewSupplierCompanyPage.clickAddNewSupplierButton();
-//		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.enterName("John Doe");
-//		addNewSupplierCompanyPage.enterAddress("1234 Elm Street");
-//		addNewSupplierCompanyPage.selectAssetClass("Tangible Assets");
-//		addNewSupplierCompanyPage.addSupplierRatings();
-//		addNewSupplierCompanyPage.enterContactNo("1234567890");
-//		addNewSupplierCompanyPage.addContactNo();
-//		addNewSupplierCompanyPage.enterContactNo("1234567891");
-//		addNewSupplierCompanyPage.enterBusinessName("Witting Inc");
-//		addNewSupplierCompanyPage.enterBusinessRegistration("02-3102530");
-//		addNewSupplierCompanyPage.enterPrimaryEmail("wittinginc@gmail.com");
-//		addNewSupplierCompanyPage.enterSecondaryEmail("wittingincsec@gmail.com");
-//		addNewSupplierCompanyPage.uploadBRAttachment("");
-//		addNewSupplierCompanyPage.enterWebsite("http://wittinginc.com/");
-//		addNewSupplierCompanyPage.enterTelephone("701 258 0312");
-//		addNewSupplierCompanyPage.enterMobile("701 258 0356");
-//		addNewSupplierCompanyPage.enterFax("123456799");
-//		addNewSupplierCompanyPage.enterCity("2400 State St,Bismarck");
-//		addNewSupplierCompanyPage.enterLatitude("106");
-//		addNewSupplierCompanyPage.enterLongitude("106");
-//		addNewSupplierCompanyPage.enterLoginUsername("johndoe");
-//		addNewSupplierCompanyPage.enterLoginEmail("john.doe@example.com");
-//		addNewSupplierCompanyPage.clickSubmitButton();
-//
-//		// Assertion to verify successful form submission
-//		WebElement successMessage = driver.findElement(By.xpath(""));
-//		Assert.assertTrue(successMessage.isDisplayed(), "Success message should be displayed");
-//	}
+	@Test(priority = 1)
+	public void testFormSubmissionWithValidData() throws InterruptedException {
+		addNewSupplierCompanyPage.clickAddNewSupplierButton();
+		addNewSupplierCompanyPage.selectCompanyToggle();
+		addNewSupplierCompanyPage.enterName("John Doe");
+		addNewSupplierCompanyPage.enterAddress("1234 Elm Street");
+		addNewSupplierCompanyPage.selectAssetClass("Tangible Assets");
+		addNewSupplierCompanyPage.addSupplierRatings();
+		addNewSupplierCompanyPage.enterContactNo("1234567890");
+		addNewSupplierCompanyPage.addContactNo();
+		addNewSupplierCompanyPage.enterContactNo("1234567891");
+		addNewSupplierCompanyPage.enterBusinessName("Witting Inc");
+		addNewSupplierCompanyPage.enterBusinessRegistration("02-3102530");
+		addNewSupplierCompanyPage.enterPrimaryEmail("wittinginc@gmail.com");
+		addNewSupplierCompanyPage.enterSecondaryEmail("wittingincsec@gmail.com");
+		addNewSupplierCompanyPage.uploadBRAttachment("");
+		addNewSupplierCompanyPage.enterWebsite("http://wittinginc.com/");
+		addNewSupplierCompanyPage.enterTelephone("701 258 0312");
+		addNewSupplierCompanyPage.enterMobile("701 258 0356");
+		addNewSupplierCompanyPage.enterFax("123456799");
+		addNewSupplierCompanyPage.enterCity("2400 State St,Bismarck");
+		addNewSupplierCompanyPage.enterLatitude("106");
+		addNewSupplierCompanyPage.enterLongitude("106");
+		addNewSupplierCompanyPage.enterLoginUsername("johndoe");
+		addNewSupplierCompanyPage.enterLoginEmail("john.doe@example.com");
+		addNewSupplierCompanyPage.clickSubmitButton();
+
+		// // Assertion to verify successful form submission
+		// WebElement successMessage = driver.findElement(By.xpath(""));
+		// Assert.assertTrue(successMessage.isDisplayed(), "Success message should be
+		// displayed");
+
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+	}
 
 	@Test(priority = 2)
 	public void testErrorMessageForMissingRequiredFields() throws InterruptedException {
 
-		
 		addNewSupplierCompanyPage.clickAddNewSupplierButton();
 		Thread.sleep(3000);
 		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.clickUsername();
+		// addNewSupplierCompanyPage.clickUsername();
 		addNewSupplierCompanyPage.enterLoginEmail("");
-//		addNewSupplierCompanyPage.scrollToElementAndClick();
+		// addNewSupplierCompanyPage.scrollToElementAndClick();
 		addNewSupplierCompanyPage.clickSubmitButton();
 
 		Thread.sleep(6000);
@@ -105,108 +108,158 @@ public class AddNewSupplierCompanyTest extends BasePage {
 		Assert.assertTrue(cityError.isDisplayed(), "City error message should be displayed");
 		Assert.assertTrue(usernameError.isDisplayed(), "Username error messsage should be displayed");
 		Assert.assertTrue(passwordError.isDisplayed(), "Password error message should be displayed");
+
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 	}
-//
-//	@Test(priority = 3)
-//	public void testMultipleEmailAddresses() {
-//		addNewSupplierCompanyPage.clickAddNewSupplierButton();
-//		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.enterName("John Doe");
-//		addNewSupplierCompanyPage.enterAddress("1234 Elm Street");
-//		addNewSupplierCompanyPage.selectAssetClass("Tangible Assets");
-//		addNewSupplierCompanyPage.addSupplierRatings();
-//		addNewSupplierCompanyPage.enterContactNo("1234567890");
-//		addNewSupplierCompanyPage.addContactNo();
-//		addNewSupplierCompanyPage.enterContactNo("1234567891");
-//		addNewSupplierCompanyPage.enterBusinessName("Witting Inc");
-//		addNewSupplierCompanyPage.enterBusinessRegistration("021 310 2530");
-//		addNewSupplierCompanyPage.enterPrimaryEmail("primary@example.com");
-//		addNewSupplierCompanyPage.enterSecondaryEmail("secondary@example.com");
-//		addNewSupplierCompanyPage.uploadBRAttachment("");
-//		addNewSupplierCompanyPage.enterWebsite("http://wittinginc.com/");
-//		addNewSupplierCompanyPage.enterTelephone("701 258 0312");
-//		addNewSupplierCompanyPage.enterMobile("701 258 0356");
-//		addNewSupplierCompanyPage.enterFax("123456799");
-//		addNewSupplierCompanyPage.enterCity("2400 State St,Bismarck");
-//		addNewSupplierCompanyPage.enterLatitude("106");
-//		addNewSupplierCompanyPage.enterLongitude("106");
-//		addNewSupplierCompanyPage.enterLoginUsername("johndoe");
-//		addNewSupplierCompanyPage.enterLoginEmail("john.doe@example.com");
-//
-//		// Assertions to verify the entered email addresses
-//		WebElement primaryEmailField = driver.findElement(By.xpath(""));
-//		WebElement secondaryEmailField = driver.findElement(By.xpath(""));
-//		Assert.assertEquals(primaryEmailField.getAttribute("value"), "primary@example.com",
-//				"Primary Email should be entered correctly");
-//		Assert.assertEquals(secondaryEmailField.getAttribute("value"), "secondary@example.com",
-//				"Secondary Email should be entered correctly");
-//	}
-//
-//	@Test(priority = 4)
-//	public void testAddWebsiteLink() {
-//		addNewSupplierCompanyPage.clickAddNewSupplierButton();
-//		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.enterWebsite("http://www.testwebsite.com");
-//
-//		// Assertion to verify the entered website link
-//		WebElement websiteField = driver.findElement(By.name("website"));
-//		Assert.assertEquals(websiteField.getAttribute("value"), "http://www.testwebsite.com",
-//				"Website link should be entered correctly");
-//	}
-//
-//	@Test(priority = 5)
-//	public void testAddBRAttachment() {
-//		addNewSupplierCompanyPage.clickAddNewSupplierButton();
-//		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.uploadBRAttachment("");
-//
-//		// Assertion to verify that the BR attachment is uploaded
-//		WebElement brAttachmentUpload = driver.findElement(By.name("brAttachment"));
-//		Assert.assertNotNull(brAttachmentUpload.getAttribute("value"), "BR Attachment should be uploaded");
-//	}
-//
-//	@Test(priority = 6)
-//	public void testLatitudeField() {
-//		addNewSupplierCompanyPage.clickAddNewSupplierButton();
-//		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.enterLatitude("10");
-//
-//		// Assertion to verify the entered latitude
-//		WebElement latitudeField = driver.findElement(By.name("latitude"));
-//		Assert.assertEquals(latitudeField.getAttribute("value"), "10", "Latitude should be entered correctly");
-//	}
-//
-//	@Test(priority = 7)
-//	public void testLongitudeField() {
-//		addNewSupplierCompanyPage.clickAddNewSupplierButton();
-//		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.enterLongitude("106");
-//
-//		// Assertion to verify the entered longitude
-//		WebElement longitudeField = driver.findElement(By.name("longitude"));
-//		Assert.assertEquals(longitudeField.getAttribute("value"), "106", "Longitude should be entered correctly");
-//	}
-//
-//	@Test(priority = 8)
-//	public void testLocation() {
-//		Map<String, Object> coordinates = new HashMap<>();
-//		coordinates.put("latitude", 42.1408845);
-//		coordinates.put("longitude", -72.5033907);
-//		coordinates.put("accuracy", 100);
-//	}
-//	
-//	@Test(priority = 9)
-//	public void testbrAttach() {
-//		addNewSupplierCompanyPage.clickAddNewSupplierButton();
-//		addNewSupplierCompanyPage.selectCompanyToggle();
-//		addNewSupplierCompanyPage.selectAssetClass("");
-//		addNewSupplierCompanyPage.uploadBRAttachment("");
-//		addNewSupplierCompanyPage.enterLoginEmail("");
-//		addNewSupplierCompanyPage.enterLoginUsername("");
-//		addNewSupplierCompanyPage.clickSubmitButton();
-//		
-//		WebElement brAttachment = driver.findElement(By.xpath(""));
-//		Assert.assertEquals(brAttachment.getAttribute("value"), "BR attachment should be uploaded successfully.");
-//	}
-//	
+
+	@Test(priority = 3)
+	public void testMultipleEmailAddresses() throws InterruptedException {
+		addNewSupplierCompanyPage.clickAddNewSupplierButton();
+		addNewSupplierCompanyPage.selectCompanyToggle();
+		addNewSupplierCompanyPage.enterName("John Doe");
+		addNewSupplierCompanyPage.enterAddress("1234 Elm Street");
+		addNewSupplierCompanyPage.selectAssetClass("Tangible Assets");
+		addNewSupplierCompanyPage.addSupplierRatings();
+		addNewSupplierCompanyPage.enterContactNo("1234567890");
+		addNewSupplierCompanyPage.addContactNo();
+		addNewSupplierCompanyPage.enterContactNo("1234567891");
+		addNewSupplierCompanyPage.enterBusinessName("Witting Inc");
+		addNewSupplierCompanyPage.enterBusinessRegistration("021 310 2530");
+		addNewSupplierCompanyPage.enterPrimaryEmail("primary@example.com"); // primary email
+		addNewSupplierCompanyPage.enterSecondaryEmail("secondary@example.com"); // secondary email
+		addNewSupplierCompanyPage.uploadBRAttachment("");
+		addNewSupplierCompanyPage.enterWebsite("http://wittinginc.com/");
+		addNewSupplierCompanyPage.enterTelephone("701 258 0312");
+		addNewSupplierCompanyPage.enterMobile("701 258 0356");
+		addNewSupplierCompanyPage.enterFax("123456799");
+		addNewSupplierCompanyPage.enterCity("2400 State St,Bismarck");
+		addNewSupplierCompanyPage.enterLatitude("106");
+		addNewSupplierCompanyPage.enterLongitude("106");
+		addNewSupplierCompanyPage.enterLoginUsername("johndoe");
+		addNewSupplierCompanyPage.enterLoginEmail("john.doe@example.com");
+
+		// Assertions to verify the entered email addresses
+		WebElement primaryEmailField = driver.findElement(By.xpath(""));
+		WebElement secondaryEmailField = driver.findElement(By.xpath(""));
+		Assert.assertEquals(primaryEmailField.getAttribute("value"), "primary@example.com",
+				"Primary Email should be entered correctly");
+		Assert.assertEquals(secondaryEmailField.getAttribute("value"), "secondary@example.com",
+				"Secondary Email should be entered correctly");
+
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+
+	}
+
+	@Test(priority = 4)
+	public void testAddWebsiteLink() throws InterruptedException {
+		addNewSupplierCompanyPage.clickAddNewSupplierButton();
+		addNewSupplierCompanyPage.selectCompanyToggle();
+		addNewSupplierCompanyPage.enterName("James Peter");
+		addNewSupplierCompanyPage.enterAddress("1234 old Street");
+		addNewSupplierCompanyPage.selectAssetClass("Tangible Assets");
+		addNewSupplierCompanyPage.addSupplierRatings();
+		addNewSupplierCompanyPage.enterContactNo("0112356781");
+		addNewSupplierCompanyPage.addContactNo();
+		addNewSupplierCompanyPage.enterContactNo("0118787881");
+		addNewSupplierCompanyPage.enterBusinessName("Initech");
+		addNewSupplierCompanyPage.enterBusinessRegistration("100 200 394");
+		addNewSupplierCompanyPage.enterWebsite("http://www.testwebsite.com"); // Website
+		addNewSupplierCompanyPage.enterTelephone("0117276571");
+		addNewSupplierCompanyPage.enterMobile("0775467891");
+		addNewSupplierCompanyPage.enterFax("123456799");
+		addNewSupplierCompanyPage.enterCity("New York");
+		addNewSupplierCompanyPage.enterLatitude("105");
+		addNewSupplierCompanyPage.enterLongitude("105");
+		addNewSupplierCompanyPage.enterLoginUsername("james");
+		addNewSupplierCompanyPage.enterLoginEmail("james.peter@yahoo.com");
+		addNewSupplierCompanyPage.clickSubmitButton();
+
+		// Assertion to verify the entered website link
+		WebElement websiteField = driver.findElement(By.xpath(""));
+		Assert.assertEquals(websiteField.getAttribute("value"), "http://www.testwebsite.com",
+				"Website link should be entered correctly");
+
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+	}
+
+	@Test(priority = 5)
+	public void testAddBRAttachment() throws InterruptedException {
+		addNewSupplierCompanyPage.clickAddNewSupplierButton();
+		addNewSupplierCompanyPage.selectCompanyToggle();
+		addNewSupplierCompanyPage.enterName("Joseph Turner");
+		addNewSupplierCompanyPage.enterAddress("234 Bank Street");
+		addNewSupplierCompanyPage.selectAssetClass("Tangible Assets");
+		addNewSupplierCompanyPage.addSupplierRatings();
+		addNewSupplierCompanyPage.enterContactNo("0116628907");
+		addNewSupplierCompanyPage.addContactNo();
+		addNewSupplierCompanyPage.enterContactNo("0117576748");
+		addNewSupplierCompanyPage.enterBusinessName("Soylent Corporation");
+		addNewSupplierCompanyPage.enterBusinessRegistration("1323243");
+		addNewSupplierCompanyPage.enterPrimaryEmail("soylent@corporation.com");
+		addNewSupplierCompanyPage.enterSecondaryEmail("soylent@corp.com");
+		addNewSupplierCompanyPage.uploadBRAttachment(""); // BR Attachment
+		addNewSupplierCompanyPage.enterWebsite("https://soylent.com");
+		addNewSupplierCompanyPage.enterTelephone("0116356375");
+		addNewSupplierCompanyPage.enterMobile("0776464656");
+		addNewSupplierCompanyPage.enterFax("123456788");
+		addNewSupplierCompanyPage.enterCity("amsterdam");
+		addNewSupplierCompanyPage.enterLatitude("102");
+		addNewSupplierCompanyPage.enterLongitude("87");
+		addNewSupplierCompanyPage.enterLoginUsername("soylent");
+		addNewSupplierCompanyPage.enterLoginEmail("soylent@gmail.com");
+		addNewSupplierCompanyPage.clickSubmitButton();
+
+		// Assertion to verify that the BR attachment is uploaded
+		WebElement brAttachmentUpload = driver.findElement(By.xpath(""));
+		Assert.assertNotNull(brAttachmentUpload.getAttribute("value"), "BR Attachment should be uploaded");
+
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+	}
+
+	// @Test(priority = 6)
+	// public void testLatitudeField() throws InterruptedException {
+	// addNewSupplierCompanyPage.clickAddNewSupplierButton();
+	// addNewSupplierCompanyPage.selectCompanyToggle();
+	// addNewSupplierCompanyPage.enterLatitude("10");
+	//
+	// // Assertion to verify the entered latitude
+	// WebElement latitudeField = driver.findElement(By.name("latitude"));
+	// Assert.assertEquals(latitudeField.getAttribute("value"), "10", "Latitude
+	// should be entered correctly");
+	//
+	// driver.navigate().refresh();
+	// Thread.sleep(3000);
+	// }
+	//
+	// @Test(priority = 7)
+	// public void testLongitudeField() throws InterruptedException {
+	// addNewSupplierCompanyPage.clickAddNewSupplierButton();
+	// addNewSupplierCompanyPage.selectCompanyToggle();
+	// addNewSupplierCompanyPage.enterLongitude("106");
+	//
+	// // Assertion to verify the entered longitude
+	// WebElement longitudeField = driver.findElement(By.name("longitude"));
+	// Assert.assertEquals(longitudeField.getAttribute("value"), "106", "Longitude
+	// should be entered correctly");
+	//
+	// driver.navigate().refresh();
+	// Thread.sleep(3000);
+	// }
+	//
+	// @Test(priority = 8)
+	// public void testLocation() throws InterruptedException {
+	// Map<String, Object> coordinates = new HashMap<>();
+	// coordinates.put("latitude", 42.1408845);
+	// coordinates.put("longitude", -72.5033907);
+	// coordinates.put("accuracy", 100);
+	//
+	// driver.navigate().refresh();
+	// Thread.sleep(3000);
+	//
+	// }
+
 }
